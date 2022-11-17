@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import coil.load
 
 
 /**
@@ -14,6 +15,8 @@ import androidx.navigation.fragment.findNavController
  */
 class FirstFragment : Fragment() {
     private var _binding: FragmentFirstBinding? = null
+    val imageUrl = "https://images.freeimages.com/images/large-previews/825/linked-hands-1308777.jpg"
+
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -34,6 +37,8 @@ class FirstFragment : Fragment() {
         binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
+
+        binding.imageView.load(imageUrl)
     }
 
     override fun onDestroyView() {
