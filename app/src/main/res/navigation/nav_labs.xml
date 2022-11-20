@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_labs">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_labs"
+    app:startDestination="@id/labsMainFragment">
+
+
+    <action android:id="@+id/navigate_global_to_navDefault"
+        app:destination="@id/nav_default"/>
+
+    <action android:id="@+id/navigate_global_to_labsMainFragment"
+        app:destination="@id/labsMainFragment"/>
+
+    <fragment
+        android:id="@+id/labsMainFragment"
+        android:name="in.junkielabs.adsmeta.ui.labs.LabsFragmentMain"
+        android:label="Main"
+        tools:layout="@layout/labs_main_fragment">
+
+        <action android:id="@+id/navigate_to_labsSample1"
+            app:destination="@id/labsSample1Fragment"/>
+
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/labsSample1Fragment"
+        android:name="in.junkielabs.adsmeta.ui.labs.sample1.LabsFragmentSample1"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/labs_sample1_fragment">
+
+
+    </fragment>
 
 
 </navigation>

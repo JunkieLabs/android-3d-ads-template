@@ -3,8 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/nav_labs">
 
-   <include app:graph="@navigation/mav_graph_doc_test"/>
+   <action android:id="@+id/navigate_global_to_navLabs"
+       app:destination="@id/nav_labs"/>
+
+   <include
+
+       app:graph="@navigation/nav_default"/>
+
+   <include
+
+       app:graph="@navigation/nav_labs"/>
 
 </navigation>

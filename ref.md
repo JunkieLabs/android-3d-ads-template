@@ -25,7 +25,9 @@
 
 - https://medium.com/androiddevelopers/multiple-back-stacks-b714d974f134
 
-## 
+## passing data
+
+- https://developer.android.com/guide/navigation/navigation-pass-data
 
 # other
 

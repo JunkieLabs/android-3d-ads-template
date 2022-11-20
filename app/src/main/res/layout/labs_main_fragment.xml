@@ -7,6 +7,12 @@
 
         <import type="android.view.View" />
 
+        <variable
+            name="viewModel"
+            type="in.junkielabs.adsmeta.ui.labs.LabsMainViewModel" />
+
+
+
     </data>
 
     <androidx.core.widget.NestedScrollView
@@ -34,7 +40,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_6"
-                android:text="Launcher" />
+                android:onClick="@{() -> viewModel.navigateToSample1()}"
+                android:text="Labs Sample 1" />
 
 
             <View
@@ -48,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_8"
                 android:gravity="center_horizontal"
-                android:text="Testing" />
+                android:text="Labs" />
 
             <View
                 android:layout_width="match_parent"
@@ -60,7 +67,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_6"
-                android:text="Others" />
+                android:onClick="@{() -> viewModel.navigateToDefault()}"
+                android:text="Default" />
 
 
         </LinearLayout>

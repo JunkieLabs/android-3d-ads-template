@@ -1,12 +1,15 @@
 package `in`.junkielabs.adsmeta.ui.labs
 
 import `in`.junkielabs.adsmeta.databinding.LabsMainFragmentBinding
+import `in`.junkielabs.adsmeta.tools.livedata.LiveDataObserver
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 
 /**
  * Created by Niraj on 20-11-2022.
@@ -14,7 +17,7 @@ import androidx.fragment.app.viewModels
 class LabsFragmentMain: FragmentBase(true) {
 
 
-    private val viewModel: LabsMainViewModel by viewModels()
+    private val mViewModel: LabsMainViewModel by viewModels()
     private lateinit var vBinding: LabsMainFragmentBinding
 
     override fun onCreateView(
@@ -24,6 +27,7 @@ class LabsFragmentMain: FragmentBase(true) {
     ): View {
         vBinding =
             LabsMainFragmentBinding.inflate(inflater, container, false).apply {
+                viewModel = mViewModel
                 lifecycleOwner = this@LabsFragmentMain.viewLifecycleOwner
             }
         return vBinding.root
@@ -32,7 +36,34 @@ class LabsFragmentMain: FragmentBase(true) {
     }
 
     override fun setupViewModelObservers() {
-        super.setupViewModelObservers()
+//        super.setupViewModelObservers()
+
+        mViewModel.mEventNavigate.observe(viewLifecycleOwner, LiveDataObserver{
+            navigateTo(it)
+        })
+    }
+
+    private fun navigateTo(it: Int) {
+/*        val action = LabsFragmentMain.actionNavigationHomeToShowAllFragment(movieListType)
+        findNavController().navigate(action)*/
+
+        Log.i("LabsFragmentMain", "navigateTo $it")
+
+        when (it){
+            LabsConstants.Navigation.SAMPLE_1 -> {
+                val action = LabsFragmentMainDirections.navigateToLabsSample1()
+                findNavController().navigate(action)
+            }
+            LabsConstants.Navigation.DEFAULT -> {
+                val action = LabsFragmentMainDirections.navigateGlobalToNavDefault()
+                findNavController().navigate(action)
+            }
+        }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
     }
 
 
