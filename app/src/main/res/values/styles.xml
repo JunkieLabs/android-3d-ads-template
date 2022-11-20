@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Jl.App.Button" parent="Widget.Material3.Button">
+<!--        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>-->
+<!--        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>-->
+        <item name="android:radius">@dimen/dp_20</item>
+    </style>
+
+</resources>

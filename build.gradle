@@ -3,9 +3,12 @@ buildscript {
     ext.coroutines_version = '1.6.4'
     ext.coil_version = '2.2.1'
     ext.hilt_version = '2.40.5'
+    ext.nav_version = "2.5.3"
 
     dependencies {
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
     }
 }
 
