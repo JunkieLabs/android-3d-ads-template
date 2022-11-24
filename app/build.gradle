@@ -1,6 +1,6 @@
 plugins {
-    id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.android.application'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
     id 'androidx.navigation.safeargs.kotlin'
@@ -18,6 +18,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
 
     buildTypes {
         release {
@@ -38,6 +39,7 @@ android {
     }
 }
 
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
@@ -53,7 +55,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
-
+    //Hilt
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
+    kapt "androidx.hilt:hilt-compiler:1.0.0"
 
     // Coroutines (Flow)
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:coroutine_version"
@@ -61,7 +67,5 @@ dependencies {
     //Coil
     implementation "io.coil-kt:coil:$coil_version"
 
-    //hilt
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+
 }
