@@ -2,10 +2,29 @@
 <resources>
 
     <style name="Widget.Jl.App.Button" parent="Widget.Material3.Button">
-<!--        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>-->
-<!--        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>-->
-<!--        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>-->
+        <!--        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>-->
+        <!--        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>-->
+        <!--        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>-->
         <item name="android:radius">@dimen/dp_14</item>
     </style>
+
+
+    <!--    CornerRadius-->
+    <style name="CornerRadius_dp10">
+        <item name="cornerSize">@dimen/dp_10</item>
+    </style>
+
+    <style name="CornerRadius_dp12">
+        <item name="cornerSize">@dimen/dp_12</item>
+    </style>
+
+    <style name="CornerRadius_dp16">
+        <item name="cornerSize">@dimen/dp_16</item>
+    </style>
+
+    <style name="CornerRadius_dp20">
+        <item name="cornerSize">@dimen/dp_20</item>
+    </style>
+
 
 </resources>
