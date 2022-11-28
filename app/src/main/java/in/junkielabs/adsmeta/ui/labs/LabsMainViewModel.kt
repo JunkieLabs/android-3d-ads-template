@@ -18,15 +18,16 @@ class LabsMainViewModel: ViewModelBase() {
 
     fun navigateToSample1(){
 //        Log.i("LabsMainViewModel", "navigateToSample1")
-
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.SAMPLE_1))
+    }
+
+    fun navigateTo3d(){
+        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.THREE_D))
     }
 
     fun navigateToDefault(){
 //        Log.i("LabsMainViewModel", "navigateToDefault")
-
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.DEFAULT))
-
     }
 
 }

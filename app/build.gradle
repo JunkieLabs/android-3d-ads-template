@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "in.junkielabs.adsmeta"
-        minSdk 21
+        minSdk 24
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -66,6 +66,9 @@ dependencies {
 
     //Coil
     implementation "io.coil-kt:coil:$coil_version"
+
+    // 3d
+    implementation 'io.github.sceneview:sceneview:0.9.0'
 
 
 }

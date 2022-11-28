@@ -14,7 +14,7 @@ import androidx.navigation.fragment.findNavController
 /**
  * Created by Niraj on 20-11-2022.
  */
-class LabsFragmentMain: FragmentBase(true) {
+class LabsFragmentMain : FragmentBase(true) {
 
 
     private val mViewModel: LabsMainViewModel by viewModels()
@@ -38,7 +38,7 @@ class LabsFragmentMain: FragmentBase(true) {
     override fun setupViewModelObservers() {
 //        super.setupViewModelObservers()
 
-        mViewModel.mEventNavigate.observe(viewLifecycleOwner, LiveDataObserver{
+        mViewModel.mEventNavigate.observe(viewLifecycleOwner, LiveDataObserver {
             navigateTo(it)
         })
     }
@@ -49,9 +49,13 @@ class LabsFragmentMain: FragmentBase(true) {
 
         Log.i("LabsFragmentMain", "navigateTo $it")
 
-        when (it){
+        when (it) {
             LabsConstants.Navigation.SAMPLE_1 -> {
                 val action = LabsFragmentMainDirections.navigateToLabsSample1()
+                findNavController().navigate(action)
+            }
+            LabsConstants.Navigation.THREE_D -> {
+                val action = LabsFragmentMainDirections.navigateToLabs3d()
                 findNavController().navigate(action)
             }
             LabsConstants.Navigation.DEFAULT -> {

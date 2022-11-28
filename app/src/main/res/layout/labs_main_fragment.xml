@@ -26,14 +26,19 @@
             android:orientation="vertical"
             android:focusable="true">
 
+
             <TextView
-                android:id="@+id/labs_main_fragment_version"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:gravity="center_horizontal"
                 android:layout_marginTop="@dimen/dp_8"
-                android:layout_marginBottom="@dimen/dp_8"/>
+                android:gravity="center_horizontal"
+                android:text="Labs" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/md_grey_600"/>
             <Button
                 android:id="@+id/labs_main_fragment_launcher_btn"
                 style="@style/Widget.Jl.App.Button"
@@ -55,12 +60,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_8"
                 android:gravity="center_horizontal"
-                android:text="Labs" />
+                android:text="Others" />
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/md_grey_600"/>
+            <Button
+                android:id="@+id/labs_main_fragment_3d_btn"
+                style="@style/Widget.Jl.App.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:onClick="@{() -> viewModel.navigateTo3d()}"
+                android:text="3d" />
+
             <Button
                 android:id="@+id/labs_main_fragment_others_btn"
                 style="@style/Widget.Jl.App.Button"
