@@ -47,6 +47,10 @@
 
 # 3d 
 
+## sceneform
+
+- https://github.com/SceneView/sceneform-android
+
 ## open gl
 
 - https://github.com/the3deer/android-3D-model-viewer
@@ -81,4 +85,30 @@
 ## rotate 3d
 
 - https://stackoverflow.com/questions/71151073/how-to-rotate-an-3d-model-using-draggesture-in-android-sceneform
+- 
 - https://www.youtube.com/watch?v=5tx8kIhr7Bo
+
+### simulation
+
+- https://www.cs.usfca.edu/~galles/visualization/RotateScale3D.html
+
+
+## sensor 3d rotate
+
+- https://github.com/ratana/rotation-vector-compass
+
+- https://stackoverflow.com/questions/38951860/how-to-use-the-numbers-from-game-rotation-vector-in-android
+
+## rotate  2d 
+- 
+- https://github.com/githubwing/compassView/blob/master/app/src/main/java/com/wingsofts/threed/CompassView.java
+
+
+## dice 3d
+
+- https://github.com/samlss/DiceLoadingView
+
+## camera 3d position
+
+- https://github.com/SceneView/sceneview-android/issues/123
+

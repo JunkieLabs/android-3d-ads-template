@@ -25,6 +25,11 @@ class LabsMainViewModel: ViewModelBase() {
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.THREE_D))
     }
 
+    fun navigateTo3dSense(){
+        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.THREE_D_SENSE))
+
+    }
+
     fun navigateToDefault(){
 //        Log.i("LabsMainViewModel", "navigateToDefault")
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.DEFAULT))
