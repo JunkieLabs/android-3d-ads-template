@@ -9,22 +9,16 @@
     </style>
 
 
-    <!--    CornerRadius-->
-    <style name="CornerRadius_dp10">
-        <item name="cornerSize">@dimen/dp_10</item>
+
+    <style name="Widget.Jl.App.Chip" parent="Widget.Material3.Chip.Suggestion">
+       <item name="android:textAppearance">@style/Typo.Jl.chipText</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="chipStrokeColor">@color/md_white_1000_10</item>
+        <item name="chipBackgroundColor">@color/md_white_1000_10</item>
+        <item name="chipCornerRadius">@dimen/dp_16</item>
+        <item name="chipSurfaceColor">@android:color/transparent</item>
     </style>
+    <style name="Widget.Jl.App.Chip.Half" parent="Widget.Jl.App.Chip">
 
-    <style name="CornerRadius_dp12">
-        <item name="cornerSize">@dimen/dp_12</item>
     </style>
-
-    <style name="CornerRadius_dp16">
-        <item name="cornerSize">@dimen/dp_16</item>
-    </style>
-
-    <style name="CornerRadius_dp20">
-        <item name="cornerSize">@dimen/dp_20</item>
-    </style>
-
-
 </resources>

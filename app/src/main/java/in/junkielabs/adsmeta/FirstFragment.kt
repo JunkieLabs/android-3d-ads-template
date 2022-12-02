@@ -16,10 +16,9 @@ import coil.load
  */
 class FirstFragment : Fragment() {
     private var _binding: FragmentFirstBinding? = null
+    private val binding get() = _binding!!
 
     val imageUrl = "https://images.freeimages.com/images/large-previews/825/linked-hands-1308777.jpg"
-
-    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

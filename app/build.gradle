@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId "in.junkielabs.adsmeta"
-        minSdk 21
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -46,6 +46,9 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.8.0-alpha03'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
 
 
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    CornerRadius-->
+    <style name="CornerRadius_dp10">
+        <item name="cornerSize">@dimen/dp_10</item>
+    </style>
+
+    <style name="CornerRadius_dp12">
+        <item name="cornerSize">@dimen/dp_12</item>
+    </style>
+
+    <style name="CornerRadius_dp16">
+        <item name="cornerSize">@dimen/dp_16</item>
+    </style>
+
+    <style name="CornerRadius_dp20">
+        <item name="cornerSize">@dimen/dp_20</item>
+    </style>
+</resources>
