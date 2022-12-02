@@ -74,4 +74,7 @@ dependencies {
     implementation 'io.github.sceneview:sceneview:0.9.0'
 
 
+    implementation project(':submodules:engine')
+
+
 }
