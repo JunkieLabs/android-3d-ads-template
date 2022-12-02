@@ -7,6 +7,8 @@ object LabsConstants {
 
     object Navigation{
         const val SAMPLE_1  = 1
+        const val JSON = 20
         const val DEFAULT  = 100
+
     }
 }

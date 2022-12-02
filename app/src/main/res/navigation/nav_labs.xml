@@ -21,6 +21,8 @@
         <action android:id="@+id/navigate_to_labsSample1"
             app:destination="@id/labsSample1Fragment"/>
 
+        <action android:id="@+id/navigate_to_labsJson"
+            app:destination="@id/labsJsonFragment"/>
 
 
     </fragment>
@@ -33,6 +35,13 @@
 
 
     </fragment>
+    <fragment
+        android:id="@+id/labsJsonFragment"
+        android:name="in.junkielabs.adsmeta.ui.labs.json.LabsFragmentJson"
+        android:label="Json"
+        tools:layout="@layout/labs_json_fragment">
 
+
+    </fragment>
 
 </navigation>
