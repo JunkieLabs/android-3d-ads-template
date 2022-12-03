@@ -62,6 +62,10 @@ class LabsFragmentMain : FragmentBase(true) {
                 val action = LabsFragmentMainDirections.navigateToLabs3dSense()
                 findNavController().navigate(action)
             }
+            LabsConstants.Navigation.THREE_D_MODEL -> {
+                val action = LabsFragmentMainDirections.navigateToLabs3dModel()
+                findNavController().navigate(action)
+            }
             LabsConstants.Navigation.DEFAULT -> {
                 val action = LabsFragmentMainDirections.navigateGlobalToNavDefault()
                 findNavController().navigate(action)

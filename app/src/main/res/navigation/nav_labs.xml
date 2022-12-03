@@ -26,6 +26,8 @@
 
         <action android:id="@+id/navigate_to_labs3d_sense"
             app:destination="@id/labs3dSenseFragment"/>
+        <action android:id="@+id/navigate_to_labs3d_model"
+            app:destination="@id/labs3dModelFragment"/>
 
     </fragment>
 
@@ -55,6 +57,13 @@
 
 
     </fragment>
+    <fragment
+        android:id="@+id/labs3dModelFragment"
+        android:name="in.junkielabs.adsmeta.ui.labs.three.modelview.Labs3dModelFragment"
+        android:label="3d Model"
+        tools:layout="@layout/labs_3d_model_fragment">
 
+
+    </fragment>
 
 </navigation>
