@@ -1,0 +1,111 @@
+{
+  "backgrounds": [
+    {
+      "color": "#afae00",
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -1
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        }
+      }
+    },
+    {
+      "color": "#afae60",
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 50
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "bottom"
+          }
+        ]
+      }
+    },
+    {
+      "color": "#5f6ec0",
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 50
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }
+  ],
+  "contentObjects": [
+    {
+      "color": "#235f6ec0",
+      "cns": {
+        "mimeType": "image/",
+        "source": "assets",
+        "thumbnailSrc": "",
+        "imageSrc": "",
+        "bound": {
+          "scaleType": "crop"
+        }
+      },
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 50
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "top"
+          }
+        ]
+      }
+    },
+    {
+      "color": "#230ffec0",
+      "cns": {
+        "mimeType": "image/",
+        "source": "assets",
+        "thumbnailSrc": "",
+        "imageSrc": "",
+        "bound": {
+          "scaleType": "contain"
+        }
+      },
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 50
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "bottom"
+          }
+        ]
+      }
+    }
+  ],
+  "3dObjects": [
+  ]
+}
