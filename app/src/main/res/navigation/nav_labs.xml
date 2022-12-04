@@ -32,16 +32,15 @@
         android:name="in.junkielabs.adsmeta.ui.labs.sample1.LabsFragmentSample1"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/labs_sample1_fragment">
-
-
     </fragment>
+
+
     <fragment
         android:id="@+id/labsJsonFragment"
         android:name="in.junkielabs.adsmeta.ui.labs.json.LabsFragmentJson"
         android:label="Json"
         tools:layout="@layout/labs_json_fragment">
-
-
     </fragment>
+
 
 </navigation>
