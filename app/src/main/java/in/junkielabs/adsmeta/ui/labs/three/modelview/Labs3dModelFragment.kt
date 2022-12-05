@@ -71,7 +71,7 @@ class Labs3dModelFragment : FragmentBase(true), EventListener {
        /* Uri
         URI*/
 
-        val backgroundColor = floatArrayOf(0.0f, 0.0f, 0.0f, 1.0f)
+        val backgroundColor = floatArrayOf(0.0f, 0.0f, 0.0f, 0.0f)
 
         val uri = Uri.parse("android://"+requireActivity().packageName +"/assets/" + "models/Avocado.gltf")
         Log.d("Labs3dModelFragment", "onViewCreated: ${uri}")
@@ -84,9 +84,10 @@ class Labs3dModelFragment : FragmentBase(true), EventListener {
 
         try {
             Log.i("ModelActivity", "Loading GLSurfaceView...");
-
+//           var s =  GLTextureView
             mGlView = ModelSurfaceView(requireActivity(), backgroundColor, this.mScene);
             mGlView?.id = 232
+            mGlView?.setSkyBox(-1)
 
             mGlView!!.addListener(this);
 

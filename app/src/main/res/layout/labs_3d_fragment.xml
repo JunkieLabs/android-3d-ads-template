@@ -15,13 +15,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-        <io.github.sceneview.SceneView
+        <com.google.ar.sceneform.SceneView
+            android:id="@+id/labs_3d_fragment_scene"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+<!--        <io.github.sceneview.SceneView
             android:id="@+id/labs_3d_scene_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/labs_3d_textview"  />
+            app:layout_constraintTop_toBottomOf="@id/labs_3d_textview"  />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

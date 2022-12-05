@@ -77,8 +77,9 @@ dependencies {
     implementation "io.coil-kt:coil:$coil_version"
 
     // 3d
-    implementation 'io.github.sceneview:sceneview:0.9.0'
 
+    implementation "com.gorisse.thomas.sceneform:sceneform:1.21.0"
+//    implementation 'io.github.sceneview:sceneview:0.9.0'
 
     implementation project(':submodules:engine')
 

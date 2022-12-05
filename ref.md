@@ -112,3 +112,11 @@
 
 - https://github.com/SceneView/sceneview-android/issues/123
 
+
+## sceneform rotation
+
+- https://stackoverflow.com/questions/56384267/rotate-node-with-gestures-or-touch-event-sceneform-ar-core
+
+- https://github.com/SceneView/sceneform-android/issues/15
+
+- https://github.com/SceneView/sceneform-android/issues/410
