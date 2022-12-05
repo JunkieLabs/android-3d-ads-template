@@ -53,6 +53,7 @@ class LabsFragment3d : FragmentBase(true) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         mScene = vBinding.labs3dFragmentScene.scene
+
         vBinding.labs3dFragmentScene.setTransparent(true)
         mTransformationSystem = TransformationSystem(resources.displayMetrics, object :
             SelectionVisualizer {
