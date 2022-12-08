@@ -5,11 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:scaleType="fitXY"
-    android:src="@drawable/ic_launcher_background"/>
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -19,7 +14,7 @@
             android:id="@+id/text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello ? !"
+            android:text="Hello"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
