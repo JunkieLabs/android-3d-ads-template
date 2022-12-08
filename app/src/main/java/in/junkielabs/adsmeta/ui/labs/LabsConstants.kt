@@ -11,6 +11,8 @@ object LabsConstants {
         const val THREE_D_SENSE  = 3
         const val THREE_D_SENSE2  = 4
         const val THREE_D_MODEL  = 5
+        const val JSON = 20
         const val DEFAULT  = 100
+
     }
 }

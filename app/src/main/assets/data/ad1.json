@@ -54,13 +54,11 @@
     {
       "color": "#235f6ec0",
       "cns": {
-        "mimeType": "image/",
+        "mimeType": "image/png",
         "source": "assets",
         "thumbnailSrc": "",
         "imageSrc": "",
-        "bound": {
-          "scaleType": "crop"
-        }
+        "scaleType": "crop"
       },
       "bound": {
         "height": {
@@ -79,15 +77,12 @@
       }
     },
     {
-      "color": "#230ffec0",
       "cns": {
         "mimeType": "image/",
         "source": "assets",
         "thumbnailSrc": "",
         "imageSrc": "",
-        "bound": {
-          "scaleType": "contain"
-        }
+        "scaleType": "contain"
       },
       "bound": {
         "height": {
@@ -106,6 +101,6 @@
       }
     }
   ],
-  "3dObjects": [
+  "threeDObjects": [
   ]
 }

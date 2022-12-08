@@ -74,6 +74,10 @@ class LabsFragmentMain : FragmentBase(true) {
                 val action = LabsFragmentMainDirections.navigateGlobalToNavDefault()
                 findNavController().navigate(action)
             }
+            LabsConstants.Navigation.JSON -> {
+                val action = LabsFragmentMainDirections.navigateToLabsJson()
+                findNavController().navigate(action)
+            }
         }
     }
 

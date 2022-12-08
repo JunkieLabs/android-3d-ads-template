@@ -82,6 +82,10 @@ dependencies {
 //    implementation 'io.github.sceneview:sceneview:0.9.0'
 
     implementation project(':submodules:engine')
+    //Moshi
+    implementation 'com.squareup.moshi:moshi:1.9.3'
+    implementation "com.squareup.moshi:moshi-kotlin:1.9.3"
+//    kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.8.0'
 
 
 }
