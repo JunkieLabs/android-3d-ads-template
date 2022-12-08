@@ -99,6 +99,9 @@
 
 - https://stackoverflow.com/questions/38951860/how-to-use-the-numbers-from-game-rotation-vector-in-android
 
+- https://stackoverflow.com/questions/71151073/how-to-rotate-an-3d-model-using-draggesture-in-android-sceneform
+
+
 ## rotate  2d 
 - 
 - https://github.com/githubwing/compassView/blob/master/app/src/main/java/com/wingsofts/threed/CompassView.java

@@ -26,6 +26,10 @@
 
         <action android:id="@+id/navigate_to_labs3d_sense"
             app:destination="@id/labs3dSenseFragment"/>
+
+        <action android:id="@+id/navigate_to_labs3d_sense2"
+            app:destination="@id/labs3dSense2Fragment"/>
+
         <action android:id="@+id/navigate_to_labs3d_model"
             app:destination="@id/labs3dModelFragment"/>
 
@@ -57,6 +61,16 @@
 
 
     </fragment>
+
+    <fragment
+        android:id="@+id/labs3dSense2Fragment"
+        android:name="in.junkielabs.adsmeta.ui.labs.three.sense2.LabsFragment3dSense2"
+        android:label="3d Sense 2"
+        tools:layout="@layout/labs_3d_sense2_fragment">
+
+
+    </fragment>
+
     <fragment
         android:id="@+id/labs3dModelFragment"
         android:name="in.junkielabs.adsmeta.ui.labs.three.modelview.Labs3dModelFragment"

@@ -29,6 +29,10 @@ class LabsMainViewModel: ViewModelBase() {
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.THREE_D_SENSE))
 
     }
+    fun navigateTo3dSense2(){
+        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.THREE_D_SENSE2))
+
+    }
 
     fun navigateTo3dModel(){
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.THREE_D_MODEL))

@@ -85,6 +85,15 @@
                 android:text="3d Sense" />
 
             <Button
+                android:id="@+id/labs_main_fragment_3d_sense2_btn"
+                style="@style/Widget.Jl.App.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:onClick="@{() -> viewModel.navigateTo3dSense2()}"
+                android:text="3d Sense 2" />
+
+            <Button
                 android:id="@+id/labs_main_fragment_3dmodel_btn"
                 style="@style/Widget.Jl.App.Button"
                 android:layout_width="match_parent"

@@ -105,7 +105,9 @@ class LabsFragment3d : FragmentBase(true) {
             .setAsyncLoadEnabled(true)
             .build()
             .thenAccept {
+//                it.setanimate(true).start()
                 addNode(it)
+
 //                mScene?.camera.tra
             }
             .exceptionally {
@@ -143,11 +145,14 @@ class LabsFragment3d : FragmentBase(true) {
                 localScale = Vector3(0.7f, 0.7f, 0.7f)
 
                 localRotation = Quaternion.axisAngle(Vector3(1f, 0f, 0f), 35f)
-                renderable = it
+//                renderable = it
+                setRenderable(it).animate(true).start()
+
 //                renderable = modelRenderable // Build using CompletableFuture
 //                parent = mNode
                 select()
             }
+
 //            TransformableNode(mScene.view.)
 
 /*            val transformableNode = TransformableNode()
