@@ -81,7 +81,7 @@ dependencies {
     implementation "com.gorisse.thomas.sceneform:sceneform:1.21.0"
 //    implementation 'io.github.sceneview:sceneview:0.9.0'
 
-    implementation project(':submodules:engine')
+//    implementation project(':submodules:engine')
     //Moshi
     implementation 'com.squareup.moshi:moshi:1.9.3'
     implementation "com.squareup.moshi:moshi-kotlin:1.9.3"
