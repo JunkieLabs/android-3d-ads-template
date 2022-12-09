@@ -11,14 +11,14 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.fragment.app.viewModels
-import org.the3deer.android_3d_model_engine.camera.CameraController
+/*import org.the3deer.android_3d_model_engine.camera.CameraController
 import org.the3deer.android_3d_model_engine.collision.CollisionController
 import org.the3deer.android_3d_model_engine.controller.TouchController
 import org.the3deer.android_3d_model_engine.services.SceneLoader
 import org.the3deer.android_3d_model_engine.view.ModelSurfaceView
 import org.the3deer.util.android.AssetUtils
 import org.the3deer.util.android.ContentUtils
-import org.the3deer.util.event.EventListener
+import org.the3deer.util.event.EventListener*/
 import java.net.URI
 import java.util.*
 
@@ -26,11 +26,13 @@ import java.util.*
 /**
  * Created by Niraj on 03-12-2022.
  */
-class Labs3dModelFragment : FragmentBase(true), EventListener {
-    private var mCameraController: CameraController? =null
+class Labs3dModelFragment : FragmentBase(true){
+   /*
+   , EventListener
+   private var mCameraController: CameraController? =null
     private var mCollisionController: CollisionController? =null
     private var mGlView: ModelSurfaceView? =  null
-    private var mScene: SceneLoader? = null
+    private var mScene: SceneLoader? = null*/
     private val mViewModel: Labs3dModelViewModel by viewModels()
     private lateinit var vBinding: Labs3dModelFragmentBinding
 
@@ -54,7 +56,7 @@ class Labs3dModelFragment : FragmentBase(true), EventListener {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        ContentUtils.provideAssets(requireActivity())
+//        ContentUtils.provideAssets(requireActivity())
 //        requireContext().resources.as()
 
 //        requireContext().resources.assets.open()
@@ -63,13 +65,13 @@ class Labs3dModelFragment : FragmentBase(true), EventListener {
 
 
 
-        load()
+//        load()
 //        AssetUtils.createChooserDialog()
     }
 
-    fun load(){
-       /* Uri
-        URI*/
+  /*  fun load(){
+       *//* Uri
+        URI*//*
 
         val backgroundColor = floatArrayOf(0.0f, 0.0f, 0.0f, 0.0f)
 
@@ -112,7 +114,7 @@ class Labs3dModelFragment : FragmentBase(true), EventListener {
 
         }
 
-        /*try {
+        *//*try {
             Log.i("ModelActivity", "Loading TouchController...")
             touchController = TouchController(requireActivity())
             touchController.addListener(this)
@@ -125,7 +127,7 @@ class Labs3dModelFragment : FragmentBase(true), EventListener {
      ${e.message}
      """.trimIndent(), Toast.LENGTH_LONG
             ).show()
-        }*/
+        }*//*
 
         if(mGlView == null){
             return
@@ -163,5 +165,5 @@ class Labs3dModelFragment : FragmentBase(true), EventListener {
     override fun onEvent(event: EventObject?): Boolean {
 //        TODO("Not yet implemented")
         return true
-    }
+    }*/
 }
