@@ -44,13 +44,13 @@
                 android:layout_marginVertical="@dimen/dp_2">
 
                 <com.google.android.material.chip.Chip
-                    style="@style/Widget.Jl.App.Chip.Half"
+                    style="@style/Widget.Jl.App.Chip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/food" />
 
                 <com.google.android.material.chip.Chip
-                    style="@style/Widget.Jl.App.Chip.Half"
+                    style="@style/Widget.Jl.App.Chip"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/jelly" />

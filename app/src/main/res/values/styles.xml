@@ -18,7 +18,9 @@
         <item name="chipCornerRadius">@dimen/dp_16</item>
         <item name="chipSurfaceColor">@android:color/transparent</item>
     </style>
-    <style name="Widget.Jl.App.Chip.Half" parent="Widget.Jl.App.Chip">
 
+    <style name="Widget.Jl.App.Fab" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
     </style>
 </resources>
