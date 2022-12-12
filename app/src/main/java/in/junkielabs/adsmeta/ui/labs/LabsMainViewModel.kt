@@ -48,5 +48,10 @@ class LabsMainViewModel: ViewModelBase() {
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.JSON))
     }
 
+    fun navigateTemplate(){
+        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.TEMPLATE))
+
+    }
+
 
 }

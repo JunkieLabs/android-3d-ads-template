@@ -27,6 +27,9 @@
         <action android:id="@+id/navigate_to_labsJson"
             app:destination="@id/labsJsonFragment"/>
 
+        <action android:id="@+id/navigate_to_labsTemplate"
+            app:destination="@id/labsTemplateFragment"/>
+
         <action android:id="@+id/navigate_to_labs3d_sense"
             app:destination="@id/labs3dSenseFragment"/>
 
@@ -51,6 +54,13 @@
         android:name="in.junkielabs.adsmeta.ui.labs.json.LabsFragmentJson"
         android:label="Json"
         tools:layout="@layout/labs_json_fragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/labsTemplateFragment"
+        android:name="in.junkielabs.adsmeta.ui.labs.template.LabsTemplateFragment"
+        android:label="Json"
+        tools:layout="@layout/labs_template_fragment">
     </fragment>
 
     <fragment
