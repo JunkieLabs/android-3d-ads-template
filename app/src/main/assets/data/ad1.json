@@ -80,8 +80,8 @@
       "cns": {
         "mimeType": "image/",
         "source": "assets",
-        "thumbnailSrc": "",
-        "imageSrc": "",
+        "thumbnailSrc": "file:///android_asset/cap.PNG",
+        "imageSrc": "file:///android_asset/cap.PNG",
         "scaleType": "contain"
       },
       "bound": {

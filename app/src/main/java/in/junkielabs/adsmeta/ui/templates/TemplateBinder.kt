@@ -33,6 +33,7 @@ class TemplateBinder(var adTemplate: ModelAdTemplate) {
             false
         ).also{
 
+
             it.root.id = id// = id;
             mMap[id] = model
 

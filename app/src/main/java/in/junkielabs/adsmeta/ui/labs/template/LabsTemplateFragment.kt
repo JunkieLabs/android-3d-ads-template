@@ -12,6 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import coil.load
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -44,22 +45,26 @@ class LabsTemplateFragment  : FragmentBase(true){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+//        Asset
+        vBinding.labsTemplateFragmentIv.load("file:///android_asset/cap.PNG")
         lifecycleScope.launchWhenCreated {
             var template = getJson()
 
             mTemplateBinder = template?.let { TemplateBinder(it) }
 
+
             bindData()
 
-            Log.i("LabsTemplateFragment", "onViewCreated: $template")
+//            Log.i("LabsTemplateFragment", "onViewCreated: $template")
         }
 
     }
 
-    suspend fun  getJson() = withContext(Dispatchers.IO) {
+    private suspend fun  getJson() = withContext(Dispatchers.IO) {
         val jsonString = Utils.readJson(requireContext())
 //        binding.textView.text = jsonString
-        Log.d("LabsFragmentJson", "jsonString: $jsonString")
+//        Log.d("LabsFragmentJson", "jsonString: $jsonString")
 
 
         val moshi: Moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
@@ -68,7 +73,7 @@ class LabsTemplateFragment  : FragmentBase(true){
 
     }
 
-    suspend fun bindData() = withContext(Dispatchers.Main){
+    private suspend fun bindData() = withContext(Dispatchers.Main){
        mTemplateBinder?.bindView(requireContext(), vBinding.labsTemplateFragmentCl)
     }
 }

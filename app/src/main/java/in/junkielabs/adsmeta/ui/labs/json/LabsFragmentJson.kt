@@ -32,14 +32,14 @@ class LabsFragmentJson: FragmentBase(true) {
 
         val jsonString = readJson(requireContext())
 //        binding.textView.text = jsonString
-        Log.d("LabsFragmentJson", "jsonString: $jsonString")
+//        Log.d("LabsFragmentJson", "jsonString: $jsonString")
 
 
 
         val moshi: Moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
         val jsonAdapter: JsonAdapter<ModelAdTemplate> = moshi.adapter(ModelAdTemplate::class.java)
         val movies = jsonAdapter.fromJson(jsonString)
-        Log.d("LabsFragmentJson","moshiResult : $movies")
+//        Log.d("LabsFragmentJson","moshiResult : $movies")
 
 
     }
