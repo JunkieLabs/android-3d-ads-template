@@ -84,4 +84,8 @@
     <string name="food">Food</string>
     <string name="jelly">Jelly</string>
     <string name="plans">Plans</string>
+    <string name="get_it_now">Get It Now</string>
+    <string name="Lorem_ipsum_s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="hakka_noddles">Hakka Noddles</string>
+    <string name="add_button">add Button</string>
 </resources>

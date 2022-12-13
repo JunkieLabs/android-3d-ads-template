@@ -1,5 +1,6 @@
 package `in`.junkielabs.adsmeta.ui.labs.sample1
 
+import `in`.junkielabs.adsmeta.R
 import `in`.junkielabs.adsmeta.databinding.LabsMainFragmentBinding
 import `in`.junkielabs.adsmeta.databinding.LabsSample1FragmentBinding
 import `in`.junkielabs.adsmeta.tools.livedata.LiveDataObserver
@@ -8,6 +9,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.bottomsheet.BottomSheetDialog
 
 /**
  * Created by Niraj on 20-11-2022.
@@ -45,6 +47,11 @@ class LabsFragmentSample1 : FragmentBase(true) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        vBinding.detailBottomBarId.imageViewInfo.setOnClickListener {
+            val dialog = BottomSheetDialog(requireContext())
+            dialog.setContentView(R.layout.detail_bottom_sheet)
+            dialog.show()
+        }
 
     }
 }
