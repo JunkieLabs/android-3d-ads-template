@@ -37,7 +37,7 @@
         "source": "assets",
         "thumbnailSrc": "file:///android_asset/img/ad_back.png",
         "imageSrc": "file:///android_asset/img/ad_back.png",
-        "scaleType": "contain"
+        "scaleType": "cover"
       },
       "bound": {
         "width": {
