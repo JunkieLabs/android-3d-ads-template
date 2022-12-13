@@ -33,6 +33,13 @@
     },
     {
       "color": "#5f6ec0",
+      "cns": {
+        "mimeType": "image/",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cap.PNG",
+        "imageSrc": "file:///android_asset/cap.PNG",
+        "scaleType": "contain"
+      },
       "bound": {
         "height": {
           "type": "percent",

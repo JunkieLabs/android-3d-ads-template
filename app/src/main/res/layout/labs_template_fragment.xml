@@ -19,7 +19,7 @@
 
             android:elevation="@dimen/dp_1" />
 
-        <ImageView
+       <!-- <ImageView
             android:id="@+id/labs_template_fragment_iv"
             android:layout_height="@dimen/dp_112"
             android:layout_width="@dimen/dp_112"
@@ -28,7 +28,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="@dimen/dp_12"
             android:elevation="@dimen/dp_4"
-            />
+            />-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

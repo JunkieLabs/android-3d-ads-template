@@ -47,7 +47,7 @@ class LabsTemplateFragment  : FragmentBase(true){
 
 
 //        Asset
-        vBinding.labsTemplateFragmentIv.load("file:///android_asset/cap.PNG")
+//        vBinding.labsTemplateFragmentIv.load("file:///android_asset/cap.PNG")
         lifecycleScope.launchWhenCreated {
             var template = getJson()
 

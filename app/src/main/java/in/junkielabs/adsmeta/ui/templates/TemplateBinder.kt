@@ -3,11 +3,16 @@ package `in`.junkielabs.adsmeta.ui.templates
 import `in`.junkielabs.adsmeta.databinding.TemplateViewBinding
 import `in`.junkielabs.adsmeta.ui.labs.json.model.Model2DNode
 import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelAdTemplate
+import `in`.junkielabs.adsmeta.ui.templates.views.TemplateImageViewBind
+import `in`.junkielabs.adsmeta.ui.templates.views.TemplateViewBind
+import `in`.junkielabs.adsmeta.ui.templates.views.base.TemplateViewBindBase
 import android.content.Context
 import android.graphics.Color
+import android.util.Log
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
+import androidx.viewbinding.ViewBinding
 
 /**
  * Created by Niraj on 12-12-2022.
@@ -16,16 +21,31 @@ class TemplateBinder(var adTemplate: ModelAdTemplate) {
 
     var id = 1;
     var mMap = hashMapOf<Int, Model2DNode>()
+    var bindings = mutableListOf<TemplateViewBindBase<out ViewBinding>>()
 
     fun bindView(context: Context, root: ConstraintLayout){
 
         val set = ConstraintSet()
         set.clone(root)
         for (model in adTemplate.backgrounds){
-            bindView(context, root,set, model)
+            // TODO bindView(context, root,set, model)
+
+            Log.d("Template Binder", "bindView: $model ")
+            if(model.cns!=null){
+                bindings.add(TemplateImageViewBind(id, model ))
+            }else {
+                bindings.add(TemplateViewBind(id, model ))
+
+            }
+            mMap[id] = model
+
+            id++
+        }
+        for (viewBind in bindings){
+            viewBind.bind(context, root, set)
         }
     }
-    private fun bindView(context: Context, root: ConstraintLayout,set: ConstraintSet, model: Model2DNode) {
+  /*  private fun bindView(context: Context, root: ConstraintLayout,set: ConstraintSet, model: Model2DNode) {
 
         TemplateViewBinding.inflate(
             LayoutInflater.from(context),
@@ -73,16 +93,16 @@ class TemplateBinder(var adTemplate: ModelAdTemplate) {
 
         }
 
-        /*
+        *//*
         TargetAreaBinding.inflate(
                 LayoutInflater.from(this),
                 binding.activityKnowMoreTargetFlexbox,
                 false
             ).also {
 
-        * */
+        * *//*
 
-    }
+    }*/
 
 //    private fun setBound(root: ConstraintLayout, int id, root: )
 }
