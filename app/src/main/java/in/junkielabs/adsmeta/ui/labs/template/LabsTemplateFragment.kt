@@ -6,13 +6,11 @@ import `in`.junkielabs.adsmeta.ui.labs.json.Utils
 import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelAdTemplate
 import `in`.junkielabs.adsmeta.ui.templates.TemplateBinder
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
-import coil.load
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -74,6 +72,6 @@ class LabsTemplateFragment  : FragmentBase(true){
     }
 
     private suspend fun bindData() = withContext(Dispatchers.Main){
-       mTemplateBinder?.bindView(requireContext(), vBinding.labsTemplateFragmentCl)
+       mTemplateBinder?.bindBackView(requireContext(), vBinding.labsTemplateFragmentCl)
     }
 }

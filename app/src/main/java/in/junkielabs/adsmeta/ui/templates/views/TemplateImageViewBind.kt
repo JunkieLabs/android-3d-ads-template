@@ -6,6 +6,7 @@ import `in`.junkielabs.adsmeta.ui.templates.views.base.TemplateViewBindBase
 import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
+import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import coil.load
 
@@ -33,6 +34,13 @@ class TemplateImageViewBind(id: Int,  pModel: Model2DNode): TemplateViewBindBase
         if(pModel.cns!=null){
 
             Log.d("TemplateImageViewBind 2", "attachAttributes: ${pModel.cns}")
+
+            if(pModel.cns.scaleType=="cover"){
+                binding.root.scaleType = ImageView.ScaleType.CENTER_CROP
+            }else{
+                binding.root.scaleType = ImageView.ScaleType.FIT_CENTER
+
+            }
             binding.root.load(pModel.cns.imageSrc)
 
         }

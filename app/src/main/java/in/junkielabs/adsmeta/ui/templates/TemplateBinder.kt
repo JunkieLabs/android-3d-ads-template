@@ -1,15 +1,12 @@
 package `in`.junkielabs.adsmeta.ui.templates
 
-import `in`.junkielabs.adsmeta.databinding.TemplateViewBinding
 import `in`.junkielabs.adsmeta.ui.labs.json.model.Model2DNode
 import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelAdTemplate
 import `in`.junkielabs.adsmeta.ui.templates.views.TemplateImageViewBind
 import `in`.junkielabs.adsmeta.ui.templates.views.TemplateViewBind
 import `in`.junkielabs.adsmeta.ui.templates.views.base.TemplateViewBindBase
 import android.content.Context
-import android.graphics.Color
 import android.util.Log
-import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
 import androidx.viewbinding.ViewBinding
@@ -21,9 +18,9 @@ class TemplateBinder(var adTemplate: ModelAdTemplate) {
 
     var id = 1;
     var mMap = hashMapOf<Int, Model2DNode>()
-    var bindings = mutableListOf<TemplateViewBindBase<out ViewBinding>>()
+    var backgroundBindings = mutableListOf<TemplateViewBindBase<out ViewBinding>>()
 
-    fun bindView(context: Context, root: ConstraintLayout){
+    fun bindBackView(context: Context, root: ConstraintLayout){
 
         val set = ConstraintSet()
         set.clone(root)
@@ -32,16 +29,16 @@ class TemplateBinder(var adTemplate: ModelAdTemplate) {
 
             Log.d("Template Binder", "bindView: $model ")
             if(model.cns!=null){
-                bindings.add(TemplateImageViewBind(id, model ))
+                backgroundBindings.add(TemplateImageViewBind(id, model ))
             }else {
-                bindings.add(TemplateViewBind(id, model ))
+                backgroundBindings.add(TemplateViewBind(id, model ))
 
             }
             mMap[id] = model
 
             id++
         }
-        for (viewBind in bindings){
+        for (viewBind in backgroundBindings){
             viewBind.bind(context, root, set)
         }
     }
