@@ -29,11 +29,17 @@ abstract class TemplateViewBindBase<Binding : ViewBinding>(var id: Int, var mode
         if (model.bound != null) {
             var bound = model.bound
             bound!!.height?.let { bHeight ->
-                if (bHeight.type == TemplateConstants.Bound.DIMENSION_TYPE_DP && bHeight.value >= 0) {
-                    set.constrainHeight(
-                        id,
-                        (bHeight.value * context.resources.displayMetrics.density).toInt()
-                    )
+                if (bHeight.type == TemplateConstants.Bound.DIMENSION_TYPE_DP) {
+
+                    if( bHeight.value >= 0){
+                        set.constrainHeight(
+                            id,
+                            (bHeight.value * context.resources.displayMetrics.density).toInt()
+                        )
+                    }else {
+                        set.constrainHeight( id, bHeight.value)
+                    }
+
                 } else if (bHeight.type == TemplateConstants.Bound.DIMENSION_TYPE_PERCENT) {
                     set.constrainPercentHeight(
                         id,
@@ -42,16 +48,49 @@ abstract class TemplateViewBindBase<Binding : ViewBinding>(var id: Int, var mode
                 }
             }
             bound.width?.let { bDimen ->
-                if (bDimen.type == TemplateConstants.Bound.DIMENSION_TYPE_DP && bDimen.value >= 0) {
-                    set.constrainWidth(
-                        id,
-                        (bDimen.value * context.resources.displayMetrics.density).toInt()
-                    )
+                if (bDimen.type == TemplateConstants.Bound.DIMENSION_TYPE_DP ) {
+                    if(bDimen.value >= 0){
+                        set.constrainWidth(
+                            id,
+                            (bDimen.value * context.resources.displayMetrics.density).toInt()
+                        )
+                    }else {
+                        set.constrainWidth( id, bDimen.value)
+                    }
+
                 } else if (bDimen.type == TemplateConstants.Bound.DIMENSION_TYPE_PERCENT) {
                     set.constrainPercentWidth(
                         id,
                         bDimen.value.toFloat() / 100f
                     )
+
+                }
+            }
+
+            bound.positionY?.let { bDimen ->
+                if (bDimen.type == TemplateConstants.Bound.DIMENSION_TYPE_DP ) {
+
+//                    set.setMargin(id, ConstraintSet.TOP, (bDimen.value * context.resources.displayMetrics.density))
+
+                }else if (bDimen.type == TemplateConstants.Bound.DIMENSION_TYPE_PERCENT){
+
+                    Log.d("TemplateViewBindBase", "bind positionY: $bDimen")
+
+                    set.setVerticalBias( id,
+                        bDimen.value.toFloat() / 100f)
+                }
+            }
+            bound.positionX?.let { bDimen ->
+                if (bDimen.type == TemplateConstants.Bound.DIMENSION_TYPE_DP ) {
+
+//                    set.setMargin(id, ConstraintSet.TOP, (bDimen.value * context.resources.displayMetrics.density))
+
+                }else if (bDimen.type == TemplateConstants.Bound.DIMENSION_TYPE_PERCENT){
+
+                    Log.d("TemplateViewBindBase", "bind positionX: $bDimen")
+
+                    set.setHorizontalBias( id,
+                        bDimen.value.toFloat() / 100f)
                 }
             }
 

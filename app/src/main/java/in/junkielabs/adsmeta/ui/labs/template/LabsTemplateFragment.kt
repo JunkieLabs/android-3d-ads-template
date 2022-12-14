@@ -11,6 +11,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import coil.ImageLoader
+import coil.decode.SvgDecoder
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -60,7 +62,7 @@ class LabsTemplateFragment  : FragmentBase(true){
     }
 
     private suspend fun  getJson() = withContext(Dispatchers.IO) {
-        val jsonString = Utils.readJson(requireContext())
+        val jsonString = Utils.readJson(requireContext(), "data/ad_packmann.json")
 //        binding.textView.text = jsonString
 //        Log.d("LabsFragmentJson", "jsonString: $jsonString")
 
@@ -72,6 +74,9 @@ class LabsTemplateFragment  : FragmentBase(true){
     }
 
     private suspend fun bindData() = withContext(Dispatchers.Main){
+
+
        mTemplateBinder?.bindBackView(requireContext(), vBinding.labsTemplateFragmentCl)
+        mTemplateBinder?.bindObjectsView(requireContext(), vBinding.labsTemplateFragmentCl)
     }
 }

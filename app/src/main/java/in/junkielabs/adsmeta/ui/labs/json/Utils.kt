@@ -7,14 +7,14 @@ import java.io.InputStream
 import kotlin.jvm.Throws
 
 object Utils {
-    fun readJson(context: Context): String {
+    fun readJson(context: Context, filePath: String = "data/ad1.json"): String {
         Log.e("readJson","read json worked")
-        return getJsonToInputStream(context).bufferedReader().use { it.readText() }
+        return getJsonToInputStream(context, filePath).bufferedReader().use { it.readText() }
     }
 
     @Throws(IOException::class)
-    fun getJsonToInputStream(context: Context): InputStream {
+    fun getJsonToInputStream(context: Context, adFilePath: String ): InputStream {
         Log.e("inputStream","input Stream worked")
-        return context.assets.open("data/ad1.json")
+        return context.assets.open(adFilePath)
     }
 }

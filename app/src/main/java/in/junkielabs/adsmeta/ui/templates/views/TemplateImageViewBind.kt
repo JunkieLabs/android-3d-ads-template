@@ -8,12 +8,16 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
+import coil.ImageLoader
+import coil.decode.SvgDecoder
 import coil.load
 
 /**
  * Created by Niraj on 13-12-2022.
  */
 class TemplateImageViewBind(id: Int,  pModel: Model2DNode): TemplateViewBindBase<TemplateImageviewBinding>(id, pModel) {
+
+
 
 
     override fun inflateView(context: Context, parent: ConstraintLayout): TemplateImageviewBinding {
@@ -41,7 +45,21 @@ class TemplateImageViewBind(id: Int,  pModel: Model2DNode): TemplateViewBindBase
                 binding.root.scaleType = ImageView.ScaleType.FIT_CENTER
 
             }
-            binding.root.load(pModel.cns.imageSrc)
+            if(pModel.cns.imageSrc!=null && pModel.cns.imageSrc.endsWith(".svg")){
+
+                val imageLoader = ImageLoader.Builder(context)
+                    .components {
+                        add(SvgDecoder.Factory())
+                    }
+                    .build()
+
+                binding.root.load(pModel.cns.imageSrc, imageLoader)
+
+            }else{
+
+                binding.root.load(pModel.cns.imageSrc)
+
+            }
 
         }
     }

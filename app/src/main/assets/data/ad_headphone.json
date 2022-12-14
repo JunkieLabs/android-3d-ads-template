@@ -1,0 +1,209 @@
+{
+  "backgrounds": [
+    {
+      "color": "#FFCEDE",
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -1
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        }
+      }
+    },
+
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/headphone/pattern.svg",
+        "imageSrc": "file:///android_asset/cns/headphone/pattern.svg",
+        "scaleType": "cover"
+      },
+      "bound": {
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/headphone/shade.svg",
+        "imageSrc": "file:///android_asset/cns/headphone/shade.svg",
+        "scaleType": "cover"
+      },
+      "bound": {
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }
+
+  ],
+  "contentObjects": [
+    {
+     "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/headphone/decorator.svg",
+        "imageSrc": "file:///android_asset/cns/headphone/decorator.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 70
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/headphone/offer.svg",
+        "imageSrc": "file:///android_asset/cns/headphone/offer.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 25
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+
+        "positionX": {
+          "type": "percent",
+          "value": 78
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 35
+        }
+      }
+    },
+    {
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/headphone/product.png",
+        "imageSrc": "file:///android_asset/cns/headphone/product.png",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 70
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }
+  ,
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/headphone/heading.svg",
+        "imageSrc": "file:///android_asset/cns/headphone/heading.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 80
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+
+        "positionY": {
+          "type": "percent",
+          "value": 8
+        }
+      }
+    },
+
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/headphone/link.svg",
+        "imageSrc": "file:///android_asset/cns/headphone/link.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 40
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+
+        "positionY": {
+          "type": "percent",
+          "value": 75
+        }
+      }
+    }
+  ],
+  "threeDObjects": [
+  ]
+}

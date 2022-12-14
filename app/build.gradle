@@ -75,6 +75,8 @@ dependencies {
 
     //Coil
     implementation "io.coil-kt:coil:$coil_version"
+    implementation("io.coil-kt:coil-svg:$coil_version")
+
 
     // 3d
     implementation "com.gorisse.thomas.sceneform:sceneform:1.21.0"
