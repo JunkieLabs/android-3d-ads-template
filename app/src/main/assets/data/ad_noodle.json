@@ -1,0 +1,242 @@
+{
+  "backgrounds": [
+
+
+    {
+
+      "color": "#161616",
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -1
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/pattern.png",
+        "imageSrc": "file:///android_asset/cns/noodle/pattern.png",
+        "scaleType": "cover"
+      },
+      "bound": {
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }
+
+
+
+
+  ],
+  "contentObjects": [
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/offer.svg",
+        "imageSrc": "file:///android_asset/cns/noodle/offer.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 16
+
+        },
+        "width": {
+          "type": "dp",
+          "value": -2
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+
+        "positionX": {
+          "type": "percent",
+          "value": 10
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 75
+        }
+      }
+    },
+
+
+
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/heading_shade.svg",
+        "imageSrc": "file:///android_asset/cns/noodle/heading_shade.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 40
+
+        },
+        "width": {
+          "type": "dp",
+          "value": -2
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+
+        "positionY": {
+          "type": "percent",
+          "value": 8
+        }
+      }
+    },
+
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/stage.svg",
+        "imageSrc": "file:///android_asset/cns/noodle/stage.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 100
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 40
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }
+  ,
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/heading.svg",
+        "imageSrc": "file:///android_asset/cns/noodle/heading.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 70
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+
+        "positionY": {
+          "type": "percent",
+          "value": 15
+        }
+      }
+    },
+    {
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 80
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 45
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }
+  ,
+
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/link.svg",
+        "imageSrc": "file:///android_asset/cns/noodle/link.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 40
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+
+        "positionY": {
+          "type": "percent",
+          "value": 75
+        }
+      }
+    }
+  ],
+  "threeDObjects": [
+  ]
+}
