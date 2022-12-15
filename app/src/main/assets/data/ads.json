@@ -1,0 +1,92 @@
+{
+  "items": [
+    {
+      "title": "Noodle",
+      "color": "#161616",
+      "spanCount": 2,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "scaleType": "cover"
+      },
+      "tags": [
+        {
+          "name":"Food",
+          "color": "#9FF1E7"
+        },
+        {
+          "name":"Jelly",
+          "color": "#FFDAA3"
+        }
+      ]
+    },
+    {
+      "title": "Trippy",
+      "color": "#161616",
+      "spanCount": 1,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "scaleType": "cover"
+      },
+      "tags": [
+        {
+          "name":"Food",
+          "color": "#9FF1E7"
+        },
+        {
+          "name":"Jelly",
+          "color": "#FFDAA3"
+        }
+      ]
+    },
+    {
+      "title": "Wait",
+      "color": "#161616",
+      "spanCount": 1,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "scaleType": "cover"
+      },
+      "tags": [
+        {
+          "name":"Food",
+          "color": "#9FF1E7"
+        },
+        {
+          "name":"Jelly",
+          "color": "#FFDAA3"
+        }
+      ]
+    },
+    {
+      "title": "3d",
+      "color": "#161616",
+      "spanCount": 1,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "scaleType": "cover"
+      },
+      "tags": [
+        {
+          "name":"Food",
+          "color": "#9FF1E7"
+        },
+        {
+          "name":"Jelly",
+          "color": "#FFDAA3"
+        }
+      ]
+    }
+  ]
+}
