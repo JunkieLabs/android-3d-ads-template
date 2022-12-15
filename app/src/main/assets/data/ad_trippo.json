@@ -1,0 +1,273 @@
+{
+  "backgrounds": [
+    {
+      "gradient": {
+        "colors": [
+          "#1A4495",
+          "#175DE7"
+        ],
+        "orientation": "TOP_BOTTOM"
+
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -1
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        }
+      }
+    },
+
+    {
+      "gradient": {
+        "colors": [
+          "#211A11",
+          "#494544"
+        ],
+        "orientation": "TOP_BOTTOM"
+
+      },
+      "color": "#44090C",
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 45
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "bottom"
+          }
+        ]
+      }
+    },
+
+
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/trippo/shade.svg",
+        "imageSrc": "file:///android_asset/cns/trippo/shade.svg",
+        "scaleType": "cover"
+      },
+      "bound": {
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }
+
+  ],
+  "contentObjects": [
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/trippo/offer.svg",
+        "imageSrc": "file:///android_asset/cns/trippo/offer.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 12
+
+        },
+        "width": {
+          "type": "dp",
+          "value": -2
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+
+        "positionX": {
+          "type": "percent",
+          "value": 85
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 70
+        }
+      }
+    },
+
+    {
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/trippo/object_sky.png",
+        "imageSrc": "file:///android_asset/cns/trippo/object_sky.png",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 80
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 35
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }
+  ,
+
+    {
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/trippo/object_land.png",
+        "imageSrc": "file:///android_asset/cns/trippo/object_land.png",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 80
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 60
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }
+  ,
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/trippo/logo.svg",
+        "imageSrc": "file:///android_asset/cns/trippo/logo.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 6
+
+        },
+        "width": {
+          "type": "dp",
+          "value": -2
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+        "positionX": {
+          "type": "percent",
+          "value": 10
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 8
+        }
+      }
+    },
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/trippo/title.svg",
+        "imageSrc": "file:///android_asset/cns/trippo/title.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 70
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+
+        "positionX": {
+          "type": "percent",
+          "value": 20
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 16
+        }
+      }
+    },
+
+
+    {
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/trippo/link.svg",
+        "imageSrc": "file:///android_asset/cns/trippo/link.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 40
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+
+        "positionY": {
+          "type": "percent",
+          "value": 75
+        }
+      }
+    }
+  ],
+  "threeDObjects": [
+  ]
+}

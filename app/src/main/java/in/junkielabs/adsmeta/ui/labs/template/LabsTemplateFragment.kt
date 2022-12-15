@@ -62,7 +62,7 @@ class LabsTemplateFragment  : FragmentBase(true){
     }
 
     private suspend fun  getJson() = withContext(Dispatchers.IO) {
-        val jsonString = Utils.readJson(requireContext(), "data/ad_packmann.json")
+        val jsonString = Utils.readJson(requireContext(), "data/ad_trippo.json")
 //        binding.textView.text = jsonString
 //        Log.d("LabsFragmentJson", "jsonString: $jsonString")
 

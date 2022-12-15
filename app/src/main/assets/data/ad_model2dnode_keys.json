@@ -1,5 +1,12 @@
 {
   "color": "?optional",
+  "gradient": {
+    "colors": [
+      "color", "color"
+    ],
+    "orientation": "TOP_BOTTOM|TR_BL|RIGHT_LEFT|BR_TL|BOTTOM_TOP|BL_TR|LEFT_RIGHT|TL_BR"
+
+  },
   "cns": {
     "?optional": true,
     "class-name": "ModelAdCns",

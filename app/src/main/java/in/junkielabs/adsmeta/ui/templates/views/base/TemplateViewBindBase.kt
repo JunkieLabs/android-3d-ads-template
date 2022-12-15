@@ -5,6 +5,7 @@ import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelBoundAlignment
 import `in`.junkielabs.adsmeta.ui.templates.TemplateConstants
 import android.content.Context
 import android.graphics.Color
+import android.graphics.drawable.GradientDrawable
 import android.util.Log
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
@@ -122,6 +123,14 @@ abstract class TemplateViewBindBase<Binding : ViewBinding>(var id: Int, var mode
         Log.d("TemplateViewBindBase :", "attachAttributes: ${pModel.cns}")
         if (model.color != null) {
             binding.root.setBackgroundColor(Color.parseColor(pModel.color))
+        }
+        if(model.gradient != null){
+            val gd = GradientDrawable(
+                model.gradient!!.orientation, model.gradient!!.colors.map { Color.parseColor(it) }.toIntArray()
+
+            )
+            binding.root.background = gd
+//            var ds = GradientDrawable(GradientDrawable.Orientation.valueOf())
         }
     }
 
