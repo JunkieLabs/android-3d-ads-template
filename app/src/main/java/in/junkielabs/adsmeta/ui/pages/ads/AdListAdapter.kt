@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import `in`.junkielabs.adsmeta.ui.labs.json.model.adModel.Item
+import android.widget.ImageView
 
 class AdListAdapter(private val adList: List<Item>) :
     RecyclerView.Adapter<AdListAdapter.ViewHolder>() {
@@ -20,7 +21,7 @@ class AdListAdapter(private val adList: List<Item>) :
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val adItemList = adList[position]
         holder.title.text = adItemList.title
-        //        holder.imageView.setImageResource(adItemList.cns)
+//        holder.imageView.setImageResource(adItemList.cns.imageSrc)
 
 
     }
@@ -31,7 +32,7 @@ class AdListAdapter(private val adList: List<Item>) :
 
     class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
         val title: TextView = itemView.findViewById(R.id.title_text_view)
-//        val imageView: ModelAdCns = itemView.findViewById(R.id.imageView)
+        val imageView: ImageView = itemView.findViewById(R.id.imageView)
 
 
     }
