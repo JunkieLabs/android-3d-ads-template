@@ -129,6 +129,23 @@
                 android:layout_marginTop="@dimen/dp_6"
                 android:onClick="@{() -> viewModel.navigateTemplate()}"
                 android:text="Template" />
+
+            <Button
+                android:id="@+id/labs_main_fragment_ad_list_fragment_btn"
+                style="@style/Widget.Jl.App.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:onClick="@{() -> viewModel.navigateToLauncher()}"
+                android:text="Launcher" />
+            <Button
+                android:id="@+id/labs_main_fragment_app_launcher_btn"
+                style="@style/Widget.Jl.App.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:onClick="@{() -> viewModel.navigateToAdListFragment()}"
+                android:text="Ad List" />
         </LinearLayout>
 
 
