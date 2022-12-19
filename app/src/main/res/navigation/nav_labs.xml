@@ -54,7 +54,9 @@
         <action
             android:id="@+id/navigate_to_ad_list_fragment"
             app:destination="@id/AdListFragment" />
-
+        <action
+            android:id="@+id/navigate_to_info_fragment"
+            app:destination="@id/InfoFragment" />
     </fragment>
     <fragment
         android:id="@+id/labsSample1Fragment"
@@ -107,18 +109,18 @@
         android:id="@+id/launcherFragment"
         android:name="in.junkielabs.adsmeta.ui.pages.launcher.LauncherFragment"
         android:label="launcher"
-        tools:layout="@layout/launcher_fragment">
-
-
-    </fragment>
+        tools:layout="@layout/launcher_fragment"></fragment>
     <fragment
         android:id="@+id/AdListFragment"
         android:name="in.junkielabs.adsmeta.ui.pages.ads.AdListFragment"
         android:label="AdList"
-        tools:layout="@layout/ad_list_fragment">
+        tools:layout="@layout/ad_list_fragment"></fragment>
 
-
-    </fragment>
+    <fragment
+        android:id="@+id/InfoFragment"
+        android:name="in.junkielabs.adsmeta.ui.pages.info.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info"></fragment>
 
 
 </navigation>
