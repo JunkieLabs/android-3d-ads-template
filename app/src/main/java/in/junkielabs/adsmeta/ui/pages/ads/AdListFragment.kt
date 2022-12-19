@@ -1,14 +1,9 @@
 package `in`.junkielabs.adsmeta.ui.pages.ads
 
 import `in`.junkielabs.adsmeta.databinding.AdListFragmentBinding
-import `in`.junkielabs.adsmeta.databinding.LauncherFragmentBinding
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
 import `in`.junkielabs.adsmeta.ui.labs.json.Utils
-import `in`.junkielabs.adsmeta.ui.labs.json.model.Model2DNode
-import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelAdTemplate
 import `in`.junkielabs.adsmeta.ui.labs.json.model.adModel.AdList
-import `in`.junkielabs.adsmeta.ui.labs.json.model.adModel.Item
-import `in`.junkielabs.adsmeta.ui.templates.TemplateBinder
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View

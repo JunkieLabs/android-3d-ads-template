@@ -88,4 +88,9 @@
     <string name="Lorem_ipsum_s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
     <string name="hakka_noddles">Hakka Noddles</string>
     <string name="add_button">add Button</string>
+    <string name="_3d">3D</string>
+    <string name="ad">Ad</string>
+    <string name="templates">Templates</string>
+    <string name="triangle">triangle</string>
+    <string name="circle">circle</string>
 </resources>

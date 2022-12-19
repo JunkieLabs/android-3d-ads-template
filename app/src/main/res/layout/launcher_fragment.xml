@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_60"
         android:fontFamily="@font/dirga"
-        android:text="3D"
+        android:text="@string/_3d"
         android:textSize="@dimen/sp_80"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.163"
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dirga"
-        android:text="Ad"
+        android:text="@string/ad"
         android:textSize="@dimen/sp_80"
         app:layout_constraintEnd_toEndOf="@+id/text_view_3d"
         app:layout_constraintStart_toStartOf="@+id/text_view_3d"
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dirga"
-        android:text="Templates"
+        android:text="@string/templates"
         android:textSize="@dimen/sp_40"
         app:layout_constraintStart_toStartOf="@+id/text_view_ad"
         app:layout_constraintTop_toBottomOf="@+id/text_view_ad" />
@@ -73,6 +73,7 @@
             app:layout_constraintVertical_bias="0.65">
 
             <ImageView
+                android:contentDescription="@string/triangle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -92,6 +93,7 @@
             app:layout_constraintVertical_bias="0.36">
 
             <ImageView
+                android:contentDescription="@string/circle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
