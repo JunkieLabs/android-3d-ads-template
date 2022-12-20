@@ -205,6 +205,7 @@ class LabsFragment3dSense2 : FragmentBase(true), SensorEventListener {
 //        render(Uri.parse("models/dragon.glb"))
 
 //        render(Uri.parse("models/room.glb"))
+//        render(Uri.parse("models/walkman.glb"))
         render(Uri.parse("models/walkman.glb"))
 
         vBinding.labs3dSense2FragmentScene.scene.camera.localPosition = Vector3(0f, 0f, 3f)
