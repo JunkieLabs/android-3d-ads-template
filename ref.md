@@ -123,3 +123,8 @@
 - https://github.com/SceneView/sceneform-android/issues/15
 
 - https://github.com/SceneView/sceneform-android/issues/410
+
+
+## use case
+
+- https://proandroiddev.com/why-you-need-use-cases-interactors-142e8a6fe576

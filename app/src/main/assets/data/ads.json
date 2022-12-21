@@ -1,6 +1,7 @@
 {
   "items": [
     {
+      "key": "noodle",
       "title": "Noodle",
       "color": "#161616",
       "spanCount": 2,
@@ -23,6 +24,7 @@
       ]
     },
     {
+      "key": "trippy",
       "title": "Trippy",
       "color": "#161616",
       "spanCount": 1,
@@ -45,6 +47,7 @@
       ]
     },
     {
+      "key": "wait",
       "title": "Wait",
       "color": "#161616",
       "spanCount": 1,
@@ -67,6 +70,7 @@
       ]
     },
     {
+      "key": "3d",
       "title": "3d",
       "color": "#161616",
       "spanCount": 1,
@@ -89,6 +93,7 @@
       ]
     },
     {
+      "key": "nd",
       "title": "Noodle",
       "color": "#161616",
       "spanCount": 2,
@@ -111,6 +116,7 @@
       ]
     },
     {
+      "key": "tp",
       "title": "Trippy",
       "color": "#161616",
       "spanCount": 1,
@@ -133,6 +139,7 @@
       ]
     },
     {
+      "key": "wt",
       "title": "Wait",
       "color": "#161616",
       "spanCount": 1,
@@ -155,6 +162,7 @@
       ]
     },
     {
+      "key": "thd",
       "title": "3d",
       "color": "#161616",
       "spanCount": 1,
@@ -177,6 +185,7 @@
       ]
     },
     {
+      "key": "nnt",
       "title": "Noodle",
       "color": "#161616",
       "spanCount": 2,
@@ -199,6 +208,7 @@
       ]
     },
     {
+      "key": "tpt",
       "title": "Trippy",
       "color": "#161616",
       "spanCount": 1,
@@ -221,6 +231,7 @@
       ]
     },
     {
+      "key": "wai",
       "title": "Wait",
       "color": "#161616",
       "spanCount": 1,
@@ -243,6 +254,7 @@
       ]
     },
     {
+      "key": "thrd",
       "title": "3d",
       "color": "#161616",
       "spanCount": 1,
