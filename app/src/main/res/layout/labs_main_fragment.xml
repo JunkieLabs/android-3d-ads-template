@@ -12,7 +12,6 @@
             type="in.junkielabs.adsmeta.ui.labs.LabsMainViewModel" />
 
 
-
     </data>
 
     <androidx.core.widget.NestedScrollView
@@ -23,8 +22,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:focusable="true">
+            android:focusable="true"
+            android:orientation="vertical">
 
 
             <TextView
@@ -38,7 +37,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/md_grey_600"/>
+                android:background="@color/md_grey_600" />
+
             <Button
                 android:id="@+id/labs_main_fragment_launcher_btn"
                 style="@style/Widget.Jl.App.Button"
@@ -52,7 +52,7 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/md_grey_600"/>
+                android:background="@color/md_grey_600" />
 
             <TextView
 
@@ -65,7 +65,8 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:background="@color/md_grey_600"/>
+                android:background="@color/md_grey_600" />
+
             <Button
                 android:id="@+id/labs_main_fragment_3d_btn"
                 style="@style/Widget.Jl.App.Button"
@@ -138,6 +139,7 @@
                 android:layout_marginTop="@dimen/dp_6"
                 android:onClick="@{() -> viewModel.navigateToLauncher()}"
                 android:text="Launcher" />
+
             <Button
                 android:id="@+id/labs_main_fragment_app_launcher_btn"
                 style="@style/Widget.Jl.App.Button"
@@ -146,8 +148,16 @@
                 android:layout_marginTop="@dimen/dp_6"
                 android:onClick="@{() -> viewModel.navigateToAdListFragment()}"
                 android:text="Ad List" />
-        </LinearLayout>
 
+            <Button
+                android:id="@+id/labs_main_fragment_info_btn"
+                style="@style/Widget.Jl.App.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:onClick="@{() -> viewModel.navigateToInfoFragment()}"
+                android:text="Info" />
+        </LinearLayout>
 
 
     </androidx.core.widget.NestedScrollView>
