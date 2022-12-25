@@ -65,6 +65,10 @@ class TemplateBinder(var adTemplate: ModelAdTemplate) {
             viewBind.bind(context, parent, set)
         }
     }
+
+    fun onSense(roll: Int){
+
+    }
     /*  private fun bindView(context: Context, root: ConstraintLayout,set: ConstraintSet, model: Model2DNode) {
 
           TemplateViewBinding.inflate(
