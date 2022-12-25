@@ -15,7 +15,8 @@ object LabsConstants {
         const val LAUNCHER = 25
         const val AD_LIST = 26
         const val INFO = 27
-        const val TEMPLATE = 22
+        const val TEMPLATE = 32
+        const val TEMPLATE_SENSE = 33
         const val DEFAULT  = 100
 
     }

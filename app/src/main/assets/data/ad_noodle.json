@@ -151,7 +151,7 @@
   ,
     {
 
-      "senseLevel": 2,
+      "senseLevel": -2,
       "cns": {
         "mimeType": "image/svg",
         "source": "assets",
@@ -183,7 +183,7 @@
     },
     {
 
-      "senseLevel": 3,
+      "senseLevel": 5,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",

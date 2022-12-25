@@ -50,8 +50,12 @@ class LabsMainViewModel: ViewModelBase() {
 
     fun navigateTemplate(){
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.TEMPLATE))
-
     }
+
+    fun navigateTemplateSense(){
+        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.TEMPLATE_SENSE))
+    }
+
     fun navigateToLauncher(){
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.LAUNCHER))
 
