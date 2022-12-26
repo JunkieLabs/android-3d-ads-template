@@ -39,7 +39,7 @@ class LocalAdsSource @Inject constructor(@ApplicationContext var context: Contex
 
         }
 
-        Log.d("LocalAdsSource", "getAds: ${data}")
+//        Log.d("LocalAdsSource", "getAds: ${data}")
         if(data!=null){
             return@withContext LocalResult.Success(data)
         }else {

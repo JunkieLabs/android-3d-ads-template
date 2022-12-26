@@ -46,9 +46,23 @@ class AdListFragment : FragmentBase(true) {
 
         mListAdapter = AdListAdapter()
         lifecycleScope.launchWhenCreated {
-            vBinding.recyclerViewAdList.layoutManager = GridLayoutManager(requireContext(),2)
-            vBinding.recyclerViewAdList.adapter =  mListAdapter
+            val layoutManager = GridLayoutManager(requireContext(), 2)
+
+            vBinding.recyclerViewAdList.layoutManager = layoutManager
+            vBinding.recyclerViewAdList.adapter = mListAdapter
+
+            layoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
+                override fun getSpanSize(position: Int): Int {
+                    return if (position % 7 == 0) {
+                        2
+                    } else {
+                        1
+                    }
+                }
+            }
         }
+
+
 /*
 
         lifecycleScope.launchWhenCreated {
@@ -64,7 +78,7 @@ class AdListFragment : FragmentBase(true) {
     override fun setupViewModelObservers() {
         super.setupViewModelObservers()
 
-        mViewModel.mEventAds.observe(viewLifecycleOwner, LiveDataObserver{
+        mViewModel.mEventAds.observe(viewLifecycleOwner, LiveDataObserver {
             mListAdapter.submitList(it)
 
         })
