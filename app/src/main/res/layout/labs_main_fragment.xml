@@ -132,6 +132,15 @@
                 android:text="Template" />
 
             <Button
+                android:id="@+id/labs_main_fragment_template_sense_btn"
+                style="@style/Widget.Jl.App.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:onClick="@{() -> viewModel.navigateTemplateSense()}"
+                android:text="Template Sense"  />
+
+            <Button
                 android:id="@+id/labs_main_fragment_ad_list_fragment_btn"
                 style="@style/Widget.Jl.App.Button"
                 android:layout_width="match_parent"
