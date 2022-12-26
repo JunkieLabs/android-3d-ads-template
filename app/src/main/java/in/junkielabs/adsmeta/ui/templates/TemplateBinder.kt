@@ -79,24 +79,30 @@ class TemplateBinder(var adTemplate: ModelAdTemplate) {
         var rollDiff = labs3dSenseRotation.roll - (mSenseCalibration?.roll?:0.0f)
         var pitchDiff = labs3dSenseRotation.pitch - (mSenseCalibration?.pitch?:0.0f)
 
-        Log.d("TemplateBinder: ", "onSense: $rollDiff, $pitchDiff")
+//        Log.d("TemplateBinder: ", "onSense: $rollDiff, $pitchDiff")
         val dm = context.resources.displayMetrics
-        val xOffset = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, rollDiff*10, dm)
-        val yOffset = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, pitchDiff*10, dm)
+        val xOffset = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, rollDiff*5, dm)
+        val yOffset = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, pitchDiff*5, dm)
 
-        val set = ConstraintSet()
-        set.clone(parent)
+//        val set = ConstraintSet()
+//        set.clone(parent)
+        Log.d("TemplateBinder: ", "onSense: $xOffset, $yOffset")
 
         for (bind in objectBindings){
 
 //            set.get
            var xMargin  = (mMap[bind.id]?.senseLevel?:0) * xOffset
             var yMargin  = (mMap[bind.id]?.senseLevel?:0) * yOffset
+//            Log.d("TemplateBinder: ", "onSense: ${bind.getBinding()?.root}")
 
-            set.setMargin(bind.id, ConstraintSet.START, xMargin.toInt())
-            set.setMargin(bind.id, ConstraintSet.BOTTOM, yMargin.toInt())
+            bind.getBinding()?.root?.translationX = xMargin
+            bind.getBinding()?.root?.translationY = -yMargin
+
+
+//            set.setMargin(bind.id, ConstraintSet.START, xMargin.toInt())
+//            set.setMargin(bind.id, ConstraintSet.BOTTOM, yMargin.toInt())
         }
-        set.applyTo(parent)
+//        set.applyTo(parent)
     }
     /*  private fun bindView(context: Context, root: ConstraintLayout,set: ConstraintSet, model: Model2DNode) {
 
