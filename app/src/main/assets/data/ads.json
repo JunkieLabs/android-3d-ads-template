@@ -8,8 +8,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
