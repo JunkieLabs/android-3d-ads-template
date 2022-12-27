@@ -23,4 +23,16 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
     </style>
+
+    <style name="Widget.Jl.App.Card"  parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/Jl.App.ShapeAppearanceOverlay.BottomCorner</item>
+    </style>
+
+    <style name="Jl.App.ShapeAppearanceOverlay.BottomCorner" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/dp_32</item>
+        <item name="cornerSizeTopRight">@dimen/dp_32</item>
+        <item name="cornerSizeBottomLeft">@dimen/dp_0</item>
+        <item name="cornerSizeBottomRight">@dimen/dp_0</item>
+    </style>
 </resources>
