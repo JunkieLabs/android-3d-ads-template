@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:rotation="-9"
+        app:layout_constraintHeight_percent="1.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintDimensionRatio="3:4">
+        <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:flow_horizontalGap="@dimen/dp_4"
+            app:flow_verticalGap="@dimen/dp_4"
+             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:constraint_referenced_ids="item11,item12,item13,item14,item15,item21,item22,item23,item24,item25,item31,item32,item33,item34,item35,item41,item42,item43,item44,item45,item51,item52,item53,item54,item55,item61,item62,item63,item64,item65,item71,item72,item73,item74,item75"
+
+            app:flow_wrapMode="aligned"
+            app:flow_horizontalStyle="packed"
+            />
+
+        <include layout="@layout/about_grid_items"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0.32"
+            app:layout_constraintWidth_percent="0.45"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:cardBackgroundColor="#78CD80"
+            app:cardElevation="@dimen/dp_24"
+            app:strokeColor="@android:color/transparent"
+
+            android:padding="@dimen/dp_0"
+            app:contentPadding="@dimen/dp_0"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/about_card"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/_3d_ad_template"
+                android:scaleType="fitCenter"/>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--
+    <androidx.constraintlayout.helper.widget.Grid
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:constraint_referenced_ids="item1,item2"
+        app:layout_constraintDimensionRatio="3:4"
+        app:grid_rows="2"
+        app:grid_columns="4" />-->
+
+
+
+    <!--
+            app:constraint_referenced_ids="btn1,btn2,... ,btn9,btn0"-->
+     <!--<View
+         android:id="@+id/item1"
+           android:layout_width="0dp"
+           android:layout_height="0dp"
+           android:background="@drawable/dr_grid_box_green"
+         tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/item2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_green"
+        tools:ignore="MissingConstraints" />-->
+
+   <!-- <androidx.gridlayout.widget.GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:columnCount="7"
+        app:alignmentMode="alignBounds"
+        app:columnOrderPreserved="false"
+        app:rowCount="4"
+
+
+        app:layout_constraintHeight_percent="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:background="@color/md_grey_300"
+
+        app:layout_constraintDimensionRatio="3:4"
+        >
+
+
+
+
+        <View
+
+            app:layout_column="1"
+            app:layout_row="1"
+            app:layout_gravity="fill"
+            app:layout_columnSpan="2"
+            app:layout_rowSpan="2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/dr_grid_box_green"
+            />
+
+    </androidx.gridlayout.widget.GridLayout>-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/info_fragment_card"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_56"
+        android:paddingHorizontal="@dimen/dp_32"
+        android:paddingVertical="@dimen/dp_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jost_regular"
+            android:gravity="center_horizontal"
+            android:text="@string/collaborate_in_junkielabs"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_32"
+            android:fontFamily="@font/jost_regular"
+            android:gravity="center_horizontal"
+            android:text="@string/at_junkielabs_we_create_apps_for_new_developers"
+            android:textSize="@dimen/sp_14" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_16"/>
+
+        <Button
+
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:id="@+id/button_github"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:backgroundTint="@color/black"
+            android:drawableStart="@drawable/github_icon"
+            android:textAppearance="@style/Typo.Jl.Button"
+            android:textColor="@color/white"
+            android:text="@string/github"/>
+
+        <Button
+            android:id="@+id/button_junkiesLabs"
+
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_60"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textColor="@color/white"
+
+            android:textAppearance="@style/Typo.Jl.Button.Junkie"
+            android:backgroundTint="#DE1D34"
+            android:text="@string/visit_junkielabs" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_36"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

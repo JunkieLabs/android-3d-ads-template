@@ -128,3 +128,7 @@
 ## use case
 
 - https://proandroiddev.com/why-you-need-use-cases-interactors-142e8a6fe576
+
+
+## grid
+- https://bignerdranch.com/blog/constraintlayout-flow-simple-grid-building-without-nested-layouts/

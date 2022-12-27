@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <!--
+            app:constraint_referenced_ids="btn1,btn2,... ,btn9,btn0"-->
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item12"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_purple"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/item14"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/item15"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 2 -->
+
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item21"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item22"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_mud"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item23"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_green"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/item24"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/item25"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_blue"
+        tools:ignore="MissingConstraints" />
+
+
+    <!-- 3 -->
+
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item31"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item32"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_mud"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item33"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_green"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/item34"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/item35"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_blue"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 4 -->
+
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item41"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item42"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_blue"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item43"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/item44"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_purple"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/item45"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+
+    <!-- 5 -->
+
+
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item51"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_pink"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item52"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item53"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_green"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/item54"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_mud"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/item55"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+
+
+    <!-- 6 -->
+
+
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item61"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_green"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item62"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item63"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_pink"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/item64"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/item65"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+
+
+    <!-- 7 -->
+
+
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item71"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_green"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item72"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+    <View
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:id="@+id/item73"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_pink"
+        tools:ignore="MissingConstraints" />
+    <View
+        android:id="@+id/item74"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/item75"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_percent="0.2"
+        app:layout_constraintHeight_percent="0.14"
+        android:layout_height="0dp"
+        android:background="@drawable/dr_grid_box_default"
+        tools:ignore="MissingConstraints" />
+</merge>

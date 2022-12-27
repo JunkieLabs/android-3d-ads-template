@@ -13,4 +13,16 @@
 <!--        <item name="fontWeight">400</item>-->
 <!--        <item name="android:textSize">@dimen/sp_14</item>-->
     </style>
+
+    <style name="Typo.Jl.Button" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/plusjakartasans_regular</item>
+        <!--        <item name="fontWeight">400</item>-->
+        <!--        <item name="android:textSize">@dimen/sp_14</item>-->
+    </style>
+
+    <style name="Typo.Jl.Button.Junkie" parent="Typo.Jl.Button">
+        <item name="fontFamily">@font/raleway_regular</item>
+        <!--        <item name="fontWeight">400</item>-->
+        <!--        <item name="android:textSize">@dimen/sp_14</item>-->
+    </style>
 </resources>
