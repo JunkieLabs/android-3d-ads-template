@@ -6,4 +6,8 @@
     <color name="about_pink">#562947</color>
     <color name="about_purple">#403354</color>
     <color name="about_default">#111111</color>
+
+
+    <color name="sheet_start">#282F2C</color>
+    <color name="sheet_end">#0D0F0E</color>
 </resources>

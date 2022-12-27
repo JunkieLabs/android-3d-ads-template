@@ -9,4 +9,6 @@
     <color name="about_purple">#DDCBFB</color>
     <color name="about_default">#ECECEC</color>
 
+    <color name="sheet_start">#F3F3F3</color>
+    <color name="sheet_end">#F1F1F1</color>
 </resources>
