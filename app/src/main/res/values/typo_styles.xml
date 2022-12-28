@@ -21,6 +21,10 @@
     <style name="Typo.Jl.Button.Junkie" parent="Typo.Jl.Button">
         <item name="fontFamily">@font/raleway_regular</item>
     </style>
+
+    <style name="Typo.Jl.Digra" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/dirga</item>
+    </style>
     <style name="Typo.Jl.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
         <item name="fontFamily">@font/jost_regular</item>
     </style>

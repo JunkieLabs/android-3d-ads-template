@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+
+
     <color name="about_green">#334B2F</color>
     <color name="about_blue">#353C53</color>
     <color name="about_mud">#514C3C</color>
@@ -10,4 +14,13 @@
 
     <color name="sheet_start">#282F2C</color>
     <color name="sheet_end">#0D0F0E</color>
+
+
+    <color name="tile_background">#131615</color>
+
+
+    <color name="launcher_green">#00AB26</color>
+    <color name="launcher_green_border">#1ECB44</color>
+    <color name="launcher_green_overlay1">#32383838</color>
+    <color name="launcher_green_overlay2">#22383838</color>
 </resources>
