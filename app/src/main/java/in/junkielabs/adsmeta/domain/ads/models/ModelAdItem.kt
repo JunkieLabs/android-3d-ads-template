@@ -2,7 +2,6 @@ package `in`.junkielabs.adsmeta.domain.ads.models
 
 import `in`.junkielabs.adsmeta.ui.labs.json.model.adModel.Cns
 import `in`.junkielabs.adsmeta.ui.labs.json.model.adModel.Tag
-import androidx.annotation.NonNull
 import androidx.recyclerview.widget.DiffUtil
 
 data class ModelAdItem(
@@ -12,8 +11,6 @@ data class ModelAdItem(
     val spanCount: Int,
     val tags: List<Tag>,
     val title: String
-
-
 ){
     companion object {
         var diffCallback: DiffUtil.ItemCallback<ModelAdItem> =

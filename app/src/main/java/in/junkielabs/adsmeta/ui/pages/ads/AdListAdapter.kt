@@ -2,6 +2,8 @@ package `in`.junkielabs.adsmeta.ui.pages.ads
 
 import `in`.junkielabs.adsmeta.R
 import `in`.junkielabs.adsmeta.data.base.LocalResult
+import `in`.junkielabs.adsmeta.databinding.AdChipFullBinding
+import `in`.junkielabs.adsmeta.databinding.AdChipHalfBinding
 import `in`.junkielabs.adsmeta.databinding.AdItemFullBinding
 import `in`.junkielabs.adsmeta.databinding.AdItemHalfBinding
 import android.view.LayoutInflater
@@ -11,33 +13,33 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import `in`.junkielabs.adsmeta.domain.ads.models.ModelAdItem
 import `in`.junkielabs.adsmeta.ui.labs.json.model.adModel.Tag
+import android.annotation.SuppressLint
+import android.content.res.ColorStateList
+import android.graphics.Color.parseColor
 import android.widget.ImageView
 import android.widget.LinearLayout
+import androidx.core.content.ContextCompat
+import androidx.core.graphics.toColorInt
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.ListAdapter
 import coil.load
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
+import com.google.ar.schemas.lull.Color
+import kotlinx.coroutines.NonDisposableHandle.parent
 import java.io.File
 // https://stackoverflow.com/questions/72717784/using-spansizelookup-in-kotlin-to-set-span-size-based-on-itemviewtype-in-gridlay
 class AdListAdapter :
     ListAdapter<ModelAdItem, RecyclerView.ViewHolder>(ModelAdItem.diffCallback) {
 
     override fun getItemViewType(position: Int): Int {
-//        TODO("Not yet implemented")
 //        return super.getItemViewType(position)
-        return if (position % 7 == 0) {
-            1
-        } else {
-            0
-        }
-
+        return super.getItem(position).spanCount
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-//        TODO("Not yet implemented")
 //        return ItemViewHolder.fromHalf(parent)
-        return if (viewType == 1) {
+        return if (viewType == 2) {
             ItemViewHolder.fromFull(parent)
         } else {
             ItemViewHolder.fromHalf(parent)
@@ -88,8 +90,10 @@ class AdListAdapter :
             override fun bind(data: ModelAdItem) {
                 binding.bModel = data
                 binding.executePendingBindings()
-                tags(binding.adItemChipGroup, data.tags)
+                binding.cardViewHalf.setCardBackgroundColor(data.color.toColorInt())
                 adImage(binding.adItemImage, data.cns.imageSrc)
+                chipHalf(binding.adItemChipGroup, data.tags)
+
             }
         }
 
@@ -98,27 +102,50 @@ class AdListAdapter :
             override fun bind(data: ModelAdItem) {
                 binding.bModel = data
                 binding.executePendingBindings()
-                tags(binding.adItemChipGroup, data.tags)
+                binding.cardViewFull.setCardBackgroundColor(data.color.toColorInt())
                 adImage(binding.adItemImage, data.cns.imageSrc)
+                chipFull(binding.adItemChipGroup, data.tags)
             }
         }
 
         abstract fun bind(data: ModelAdItem)
 
+        fun chipHalf(chipGroup: ChipGroup,tags: List<Tag>){
+            tags.forEach {
+                val chip = AdChipHalfBinding.inflate(
+                    LayoutInflater.from(itemView.context),
+                    chipGroup,
+                    false).root
 
-        fun tags(chipGroup: ChipGroup, tags: List<Tag>) {
-            for (tag in tags) {
-                val chip = Chip(itemView.context, null, R.style.Widget_Jl_App_Chip)
-                chip.layoutParams = LinearLayout.LayoutParams(
-                    ViewGroup.LayoutParams.WRAP_CONTENT,
-                    ViewGroup.LayoutParams.WRAP_CONTENT
-                )
-                chip.text = tag.name
-//                chip.setTextAppearance(R.style.Typo_Jl_chipText)
-//                chip.setChipStrokeColorResource(R.color.md_white_1000_10)
+                chip.text = it.name
+                chipGroup.addView(chip)
+
+            }
+        }
+        fun chipFull(chipGroup: ChipGroup, tags: List<Tag>){
+            tags.forEach{
+                val chip = AdChipFullBinding.inflate(
+                    LayoutInflater.from(itemView.context),
+                    chipGroup,
+                    false).root
+                chip.text = it.name
+                chip.chipBackgroundColor = ColorStateList.valueOf(it.color.toColorInt())
                 chipGroup.addView(chip)
             }
         }
+
+//        fun tags(chipGroup: ChipGroup, tags: List<Tag>) {
+//
+//            for (tag in tags) {
+//                val chip = Chip(itemView.context, null, R.style.Widget_Jl_App_Chip)
+//                chip.layoutParams = LinearLayout.LayoutParams(
+//                    ViewGroup.LayoutParams.WRAP_CONTENT,
+//                    ViewGroup.LayoutParams.WRAP_CONTENT
+//                )
+//                chip.text = tag.name
+//                chipGroup.addView(chip)
+//            }
+//        }
 
         fun adImage(adItemImage: ImageView, image: String) {
             adItemImage.load(image) {

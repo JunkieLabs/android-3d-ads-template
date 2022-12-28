@@ -53,11 +53,7 @@ class AdListFragment : FragmentBase(true) {
 
             layoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
                 override fun getSpanSize(position: Int): Int {
-                    return if (position % 7 == 0) {
-                        2
-                    } else {
-                        1
-                    }
+                    return mListAdapter.getItemViewType(position)
                 }
             }
         }

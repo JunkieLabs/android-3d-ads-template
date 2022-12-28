@@ -1,13 +1,11 @@
 package `in`.junkielabs.adsmeta.ui.templates.views
 
-import `in`.junkielabs.adsmeta.databinding.TemplateImageviewBinding
 import `in`.junkielabs.adsmeta.databinding.TemplateViewBinding
 import `in`.junkielabs.adsmeta.ui.labs.json.model.Model2DNode
 import `in`.junkielabs.adsmeta.ui.templates.views.base.TemplateViewBindBase
 import android.content.Context
 import android.view.LayoutInflater
 import androidx.constraintlayout.widget.ConstraintLayout
-import coil.load
 
 /**
  * Created by Niraj on 13-12-2022.

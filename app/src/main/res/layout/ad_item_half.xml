@@ -12,7 +12,8 @@
             type="in.junkielabs.adsmeta.domain.ads.models.ModelAdItem" />
     </data>
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_half"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="#DD4265"
@@ -29,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/dp_10"
-                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_12"
                 android:text="@{bModel.title}"
                 android:textAppearance="@style/Typo.Jl.cardTitle"
                 android:textColor="@color/white"
@@ -43,7 +44,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/dp_12"
-                android:layout_marginVertical="@dimen/dp_2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -73,5 +73,5 @@
                 app:layout_constraintTop_toBottomOf="@+id/ad_item_chip_group"
                 tools:src="@drawable/pic_book" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
 </layout>
