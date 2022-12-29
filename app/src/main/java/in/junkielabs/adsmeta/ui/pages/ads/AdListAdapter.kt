@@ -85,6 +85,8 @@ class AdListAdapter :
     //    ExploreViewHolder
     sealed class ItemViewHolder<out T : ViewDataBinding>(val binding: T) :
         RecyclerView.ViewHolder(binding.root) {
+
+        var id = 1
         class Half(binding: AdItemHalfBinding) :
             ItemViewHolder<AdItemHalfBinding>(binding) {
             override fun bind(data: ModelAdItem) {
@@ -111,13 +113,28 @@ class AdListAdapter :
         abstract fun bind(data: ModelAdItem)
 
         fun chipHalf(chipGroup: ChipGroup,tags: List<Tag>){
+
+            // TODO find if tag exist in chipgroup
+            // TODO add remaining tags in chipgroup
+            // TODO remove tags not in the list
+            /*if(chip.tag is String && it.name == chip.tag){
+//                    found
+            }*/
+
+
             tags.forEach {
+
+                id++;
+
                 val chip = AdChipHalfBinding.inflate(
                     LayoutInflater.from(itemView.context),
                     chipGroup,
                     false).root
 
                 chip.text = it.name
+                chip.tag = it.name
+
+
                 chipGroup.addView(chip)
 
             }
