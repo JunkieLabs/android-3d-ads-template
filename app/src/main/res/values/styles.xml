@@ -35,4 +35,16 @@
         <item name="cornerSizeBottomLeft">@dimen/dp_0</item>
         <item name="cornerSizeBottomRight">@dimen/dp_0</item>
     </style>
+
+    <style name="Widget.Jl.App.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+
+        <item name="shapeAppearanceOverlay">
+            @style/Jl.App.ShapeAppearanceOverlay.FloatingActionButton
+        </item>
+    </style>
+
+
+    <style name="Jl.App.ShapeAppearanceOverlay.FloatingActionButton" parent="">
+        <item name="cornerSize">100%</item>
+    </style>
 </resources>

@@ -1,7 +1,6 @@
 package `in`.junkielabs.adsmeta.ui.pages.info
 
-import `in`.junkielabs.adsmeta.databinding.FragmentAboutBinding
-import `in`.junkielabs.adsmeta.databinding.FragmentInfoBinding
+import `in`.junkielabs.adsmeta.databinding.AboutFragmentBinding
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
 import android.content.Intent
 import android.net.Uri
@@ -11,13 +10,13 @@ import android.view.View
 import android.view.ViewGroup
 
 class InfoFragment : FragmentBase(true) {
-    private lateinit var vBinding: FragmentAboutBinding
+    private lateinit var vBinding: AboutFragmentBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
-        vBinding = FragmentAboutBinding.inflate(layoutInflater, container, false)
+        vBinding = AboutFragmentBinding.inflate(layoutInflater, container, false)
         return vBinding.root
     }
 

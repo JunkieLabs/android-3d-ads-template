@@ -2,6 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="colorOnSurface">#FF000000</color>
     <color name="about_green">#D0ECC7</color>
     <color name="about_blue">#CED7FA</color>
     <color name="about_mud">#F7F0D7</color>
@@ -20,5 +22,6 @@
     <color name="launcher_green_overlay1">#72ffffff</color>
     <color name="launcher_green_overlay2">#42ffffff</color>
 
+    <color name="fab_background">#E9E9E9</color>
 
 </resources>

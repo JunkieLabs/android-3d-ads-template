@@ -60,6 +60,10 @@
         <action
             android:id="@+id/navigate_to_info_fragment"
             app:destination="@id/InfoFragment" />
+
+        <action
+            android:id="@+id/navigate_to_ad_detail"
+            app:destination="@id/AdFragment" />
     </fragment>
     <fragment
         android:id="@+id/labsSample1Fragment"
@@ -129,6 +133,11 @@
         android:name="in.junkielabs.adsmeta.ui.pages.info.InfoFragment"
         android:label="Info"
         tools:layout="@layout/fragment_info"></fragment>
+    <fragment
+        android:id="@+id/AdFragment"
+        android:name="in.junkielabs.adsmeta.ui.pages.detail.AdDetailFragment"
+        android:label="Ad Detail"
+        tools:layout="@layout/detail_fragment"></fragment>
 
 
 </navigation>
