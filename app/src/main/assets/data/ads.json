@@ -3,13 +3,13 @@
     {
       "key": "noodle",
       "title": "Noodle",
-      "color": "#161616",
+      "color": "#F565E29E",
       "spanCount": 2,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -26,13 +26,13 @@
     {
       "key": "trippy",
       "title": "Trippy",
-      "color": "#161616",
+      "color": "#9FF1E7",
       "spanCount": 1,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/headphone/product.png",
+        "imageSrc": "file:///android_asset/cns/headphone/product.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -49,13 +49,13 @@
     {
       "key": "wait",
       "title": "Wait",
-      "color": "#161616",
+      "color": "#FFDAA3",
       "spanCount": 1,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/packmann/3d.png",
+        "imageSrc": "file:///android_asset/cns/packmann/3d.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -77,8 +77,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -100,8 +100,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -123,8 +123,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -146,8 +146,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -169,8 +169,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -192,8 +192,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -215,8 +215,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -238,8 +238,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
@@ -261,8 +261,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodles/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodles/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
+        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
         "scaleType": "cover"
       },
       "tags": [
