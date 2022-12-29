@@ -37,4 +37,8 @@
     <style name="Typo.Jl.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
         <item name="fontFamily">@font/jost_regular</item>
     </style>
+
+    <style name="Typo.Jl.Body.Jakarta" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/plusjakartasans_regular</item>
+    </style>
 </resources>

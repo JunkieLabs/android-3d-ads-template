@@ -3,28 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/gradient_bottom_sheet">
+    android:background="@drawable/dr_launcher_gradient">
 
     <View
         android:id="@+id/view"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/dp_28"
         android:layout_height="@dimen/dp_10"
-        android:layout_marginHorizontal="@dimen/dp_184"
         android:layout_marginTop="@dimen/dp_10"
-        android:background="@drawable/view_corner"
+
+        android:background="@drawable/dr_bottom_sheet_rect"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:textAppearance="@style/Typo.Jl.TitleMedium"
         android:id="@+id/detail_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/dp_32"
         android:text="@string/hakka_noddles"
         android:textAlignment="center"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -37,7 +36,7 @@
         android:layout_marginTop="@dimen/dp_24"
         android:text="@string/Lorem_ipsum_s"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textAppearance="@style/Typo.Jl.BodyMedium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detail_title" />
@@ -46,23 +45,29 @@
         android:id="@+id/add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_40"
-        android:backgroundTint="#25C03E"
+
+        app:backgroundTint="#25C03E"
+        android:layout_marginBottom="@dimen/dp_44"
+        android:layout_marginTop="@dimen/dp_32"
+
         app:shapeAppearanceOverlay="@style/Widget.Jl.App.Fab"
         android:contentDescription="@string/add_button"
-        android:src="@drawable/ic_union"
+        app:srcCompat="@drawable/ic_union"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description"
         app:tint="@color/white" />
 
     <TextView
+        android:textAppearance="@style/Typo.Jl.Body.Jakarta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
         android:text="@string/get_it_now"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/color_on_surface_56"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/add_button" />
