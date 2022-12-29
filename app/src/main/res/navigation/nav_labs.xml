@@ -60,6 +60,10 @@
         <action
             android:id="@+id/navigate_to_info_fragment"
             app:destination="@id/InfoFragment" />
+
+        <action
+            android:id="@+id/navigate_to_ad_detail"
+            app:destination="@id/AdFragment" />
     </fragment>
     <fragment
         android:id="@+id/labsSample1Fragment"
@@ -129,6 +133,19 @@
         android:name="in.junkielabs.adsmeta.ui.pages.info.InfoFragment"
         android:label="Info"
         tools:layout="@layout/fragment_info"></fragment>
+    <fragment
+        android:id="@+id/AdFragment"
+        android:name="in.junkielabs.adsmeta.ui.pages.detail.AdDetailFragment"
+        android:label="Ad Detail"
+        tools:layout="@layout/detail_fragment">
 
+        <action  android:id="@+id/open_dialog_bottom_sheet"
+            app:destination="@id/detailBottomSheet" />
 
+    </fragment>
+
+    <dialog
+        android:id="@+id/detailBottomSheet"
+        android:name="in.junkielabs.adsmeta.ui.pages.detail.dialog.AdDetailDialog"
+        tools:layout="@layout/detail_bottom_sheet" />
 </navigation>

@@ -47,7 +47,7 @@ class LabsFragmentSample1 : FragmentBase(true) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        vBinding.detailBottomBarId.imageViewInfo.setOnClickListener {
+        vBinding.detailBottomBarId.detailBottomBarFab.setOnClickListener {
             val dialog = BottomSheetDialog(requireContext())
             dialog.setContentView(R.layout.detail_bottom_sheet)
             dialog.show()

@@ -5,5 +5,7 @@
 <!--                <item name="windowActionBar">true</item>-->
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorSurface">#0D0F0E</item>
+        <item name="android:colorBackground">@color/black</item>
     </style>
 </resources>

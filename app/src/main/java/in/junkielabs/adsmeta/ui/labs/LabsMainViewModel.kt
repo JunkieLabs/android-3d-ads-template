@@ -69,4 +69,9 @@ class LabsMainViewModel: ViewModelBase() {
 
     }
 
+    fun navigateTemplateAd(){
+        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.AD))
+
+    }
+
 }

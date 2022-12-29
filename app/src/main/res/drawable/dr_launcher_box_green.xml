@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="@dimen/dp_4" android:left="@dimen/dp_4">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="32dp"  />
+            <solid android:color="@color/launcher_green" />
+        </shape>
+    </item>
+
+    <item>
+
+
+        <shape android:shape="rectangle">
+            <corners android:radius="34dp" />
+
+
+            <gradient android:gradientRadius="300dp"
+                android:startColor="@color/launcher_green_overlay1"
+                android:endColor="@color/launcher_green_overlay2"
+                android:type="radial"/>
+<!--            <solid android:color="@color/md_black_1000_15" />-->
+            <stroke
+                android:width="@dimen/dp_2"
+                android:color="@color/launcher_green_border"
+                />
+
+        </shape>
+
+    </item>
+
+
+
+</layer-list>
