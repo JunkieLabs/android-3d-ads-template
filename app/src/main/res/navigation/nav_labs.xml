@@ -137,7 +137,15 @@
         android:id="@+id/AdFragment"
         android:name="in.junkielabs.adsmeta.ui.pages.detail.AdDetailFragment"
         android:label="Ad Detail"
-        tools:layout="@layout/detail_fragment"></fragment>
+        tools:layout="@layout/detail_fragment">
 
+        <action  android:id="@+id/open_dialog_bottom_sheet"
+            app:destination="@id/detailBottomSheet" />
 
+    </fragment>
+
+    <dialog
+        android:id="@+id/detailBottomSheet"
+        android:name="in.junkielabs.adsmeta.ui.pages.detail.dialog.AdDetailDialog"
+        tools:layout="@layout/detail_bottom_sheet" />
 </navigation>

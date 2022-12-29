@@ -19,6 +19,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
@@ -75,6 +76,10 @@ class AdDetailFragment : FragmentBase(true), SensorEventListener {
             registerSensor()
 
 
+        }
+        // TODO move in viewmodel
+        vBinding.bottomBar.detailBottomBarFab.setOnClickListener {
+            openDialogBottomSheet()
         }
 
 
@@ -164,6 +169,22 @@ class AdDetailFragment : FragmentBase(true), SensorEventListener {
     }
 
     override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
+
+    }
+
+    private fun openDialogBottomSheet() {
+
+/*        if(serviceId==null){
+            return;
+        }*/
+//        info { "click: openGradePicker" }
+
+        try {
+            val action = AdDetailFragmentDirections.openDialogBottomSheet()
+            findNavController().navigate(action)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
 
     }
 }

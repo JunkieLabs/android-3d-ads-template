@@ -27,7 +27,9 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <include layout="@layout/details_bottom_bar"/>
+    <include
+        android:id="@+id/bottom_bar"
+        layout="@layout/details_bottom_bar"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
