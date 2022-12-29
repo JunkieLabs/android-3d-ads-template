@@ -50,6 +50,7 @@
         style="@style/Widget.Jl.App.FAB"
         android:layout_width="wrap_content"
         android:id="@+id/detail_bottom_bar_fab"
+        app:tint="@null"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/ic_ad_info"
         android:contentDescription="detail"
