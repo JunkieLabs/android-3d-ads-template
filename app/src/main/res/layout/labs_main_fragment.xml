@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_8"
                 android:gravity="center_horizontal"
-                android:text="Labs" />
+                android:text="Apps" />
 
             <View
                 android:layout_width="match_parent"
@@ -47,7 +47,14 @@
                 android:layout_marginTop="@dimen/dp_6"
                 android:onClick="@{() -> viewModel.navigateToSample1()}"
                 android:text="Labs Sample 1" />
-
+            <Button
+                android:id="@+id/labs_main_fragment_3dsense_btn"
+                style="@style/Widget.Jl.App.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_6"
+                android:onClick="@{() -> viewModel.navigateToApp()}"
+                android:text="App" />
 
             <View
                 android:layout_width="match_parent"
@@ -60,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_8"
                 android:gravity="center_horizontal"
-                android:text="Others" />
+                android:text="Labs" />
 
             <View
                 android:layout_width="match_parent"
@@ -76,14 +83,7 @@
                 android:onClick="@{() -> viewModel.navigateTo3d()}"
                 android:text="3d" />
 
-            <Button
-                android:id="@+id/labs_main_fragment_3dsense_btn"
-                style="@style/Widget.Jl.App.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateTo3dSense()}"
-                android:text="3d Sense" />
+
 
             <Button
                 android:id="@+id/labs_main_fragment_3d_sense2_btn"
@@ -140,14 +140,6 @@
                 android:onClick="@{() -> viewModel.navigateTemplateSense()}"
                 android:text="Template Sense"  />
 
-            <Button
-                android:id="@+id/labs_main_fragment_ad_list_fragment_btn"
-                style="@style/Widget.Jl.App.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateToLauncher()}"
-                android:text="Launcher" />
 
             <Button
                 android:id="@+id/labs_main_fragment_app_launcher_btn"

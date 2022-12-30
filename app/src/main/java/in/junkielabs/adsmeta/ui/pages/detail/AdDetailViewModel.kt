@@ -1,9 +1,8 @@
 package `in`.junkielabs.adsmeta.ui.pages.detail
 
 import `in`.junkielabs.adsmeta.ui.base.ViewModelBase
-import `in`.junkielabs.adsmeta.ui.labs.three.sense.Labs3dSenseRotation
+import `in`.junkielabs.adsmeta.domain.sense.entity.Entity3dSenseRotation
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
@@ -13,9 +12,9 @@ import javax.inject.Inject
 @HiltViewModel
 internal class AdDetailViewModel @Inject constructor(): ViewModelBase() {
 
-    var bSenseRotation = MutableLiveData<Labs3dSenseRotation>()
+    var bSenseRotation = MutableLiveData<Entity3dSenseRotation>()
 
-    fun addData(sensorData: Labs3dSenseRotation){
+    fun addData(sensorData: Entity3dSenseRotation){
         bSenseRotation.postValue(sensorData)
     }
 }

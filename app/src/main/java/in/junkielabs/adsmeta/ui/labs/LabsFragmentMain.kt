@@ -50,16 +50,17 @@ class LabsFragmentMain : FragmentBase(true) {
         Log.i("LabsFragmentMain", "navigateTo $it")
 
         when (it) {
+
+            LabsConstants.Navigation.NAV_APP -> {
+                val action = LabsFragmentMainDirections.navigateGlobalToNavApp()
+                findNavController().navigate(action)
+            }
             LabsConstants.Navigation.SAMPLE_1 -> {
                 val action = LabsFragmentMainDirections.navigateToLabsSample1()
                 findNavController().navigate(action)
             }
             LabsConstants.Navigation.THREE_D -> {
                 val action = LabsFragmentMainDirections.navigateToLabs3d()
-                findNavController().navigate(action)
-            }
-            LabsConstants.Navigation.THREE_D_SENSE -> {
-                val action = LabsFragmentMainDirections.navigateToLabs3dSense()
                 findNavController().navigate(action)
             }
             LabsConstants.Navigation.THREE_D_SENSE2 -> {
@@ -84,10 +85,6 @@ class LabsFragmentMain : FragmentBase(true) {
             }
             LabsConstants.Navigation.TEMPLATE_SENSE -> {
                 val action = LabsFragmentMainDirections.navigateToLabsTemplateSense()
-                findNavController().navigate(action)
-            }
-            LabsConstants.Navigation.LAUNCHER -> {
-                val action = LabsFragmentMainDirections.navigateToLauncher()
                 findNavController().navigate(action)
             }
             LabsConstants.Navigation.AD_LIST -> {

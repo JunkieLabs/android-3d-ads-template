@@ -1,6 +1,6 @@
 package `in`.junkielabs.adsmeta.ui.labs.template.sense
 
-import `in`.junkielabs.adsmeta.ui.labs.three.sense.Labs3dSenseRotation
+import `in`.junkielabs.adsmeta.domain.sense.entity.Entity3dSenseRotation
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
@@ -9,9 +9,9 @@ import androidx.lifecycle.ViewModel
  */
 class LabsTemplateSenseViewModel: ViewModel() {
 
-    var bSenseRotation = MutableLiveData<Labs3dSenseRotation>()
+    var bSenseRotation = MutableLiveData<Entity3dSenseRotation>()
 
-    fun addData(sensorData: Labs3dSenseRotation){
+    fun addData(sensorData: Entity3dSenseRotation){
         bSenseRotation.postValue(sensorData)
     }
 

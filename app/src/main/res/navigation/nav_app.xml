@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/launcherFragment">
+
+    <action
+        android:id="@+id/navigate_global_to_info_fragment"
+        app:destination="@id/InfoFragment" />
+    <action
+        android:id="@+id/navigate_global_to_list"
+        app:destination="@id/AdListFragment" />
+
+    <fragment
+        android:id="@+id/launcherFragment"
+        android:name="in.junkielabs.adsmeta.ui.pages.launcher.LauncherFragment"
+        android:label="launcher"
+        tools:layout="@layout/launcher_fragment">
+        <action
+            android:id="@+id/navigate_to_list"
+            app:destination="@id/AdListFragment"
+
+            app:launchSingleTop="true"
+            app:popUpTo="@id/launcherFragment"
+            app:popUpToInclusive="true"/>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/AdListFragment"
+        android:name="in.junkielabs.adsmeta.ui.pages.ads.AdListFragment"
+        android:label="AdList"
+        tools:layout="@layout/ad_list_fragment">
+        <action
+            android:id="@+id/navigate_to_ad_detail"
+            app:destination="@id/AdFragment" >
+            <argument android:name="name"
+                app:argType="string"/>
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AdFragment"
+        android:name="in.junkielabs.adsmeta.ui.pages.detail.AdDetailFragment"
+        android:label="Ad Detail"
+        tools:layout="@layout/detail_fragment">
+
+        <action  android:id="@+id/open_dialog_bottom_sheet"
+            app:destination="@id/detailBottomSheet" />
+
+    </fragment>
+    <dialog
+        android:id="@+id/detailBottomSheet"
+        android:name="in.junkielabs.adsmeta.ui.pages.detail.dialog.AdDetailDialog"
+        tools:layout="@layout/detail_bottom_sheet" />
+
+    <fragment
+        android:id="@+id/InfoFragment"
+        android:name="in.junkielabs.adsmeta.ui.pages.info.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info"/>
+</navigation>

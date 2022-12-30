@@ -2,7 +2,7 @@ package `in`.junkielabs.adsmeta.ui.templates
 
 import `in`.junkielabs.adsmeta.ui.labs.json.model.Model2DNode
 import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelAdTemplate
-import `in`.junkielabs.adsmeta.ui.labs.three.sense.Labs3dSenseRotation
+import `in`.junkielabs.adsmeta.domain.sense.entity.Entity3dSenseRotation
 import `in`.junkielabs.adsmeta.ui.templates.views.TemplateImageViewBind
 import `in`.junkielabs.adsmeta.ui.templates.views.TemplateViewBind
 import `in`.junkielabs.adsmeta.ui.templates.views.base.TemplateViewBindBase
@@ -69,15 +69,15 @@ class TemplateBinder(var adTemplate: ModelAdTemplate) {
 
     }
 
-    var mSenseCalibration : Labs3dSenseRotation? = null
+    var mSenseCalibration : Entity3dSenseRotation? = null
 
-    fun onSense(context: Context, parent: ConstraintLayout, labs3dSenseRotation: Labs3dSenseRotation){
+    fun onSense(context: Context, parent: ConstraintLayout, senseRotation: Entity3dSenseRotation){
         if(mSenseCalibration == null){
-            mSenseCalibration = labs3dSenseRotation
+            mSenseCalibration = senseRotation
         }
 
-        var rollDiff = labs3dSenseRotation.roll - (mSenseCalibration?.roll?:0.0f)
-        var pitchDiff = labs3dSenseRotation.pitch - (mSenseCalibration?.pitch?:0.0f)
+        var rollDiff = senseRotation.roll - (mSenseCalibration?.roll?:0.0f)
+        var pitchDiff = senseRotation.pitch - (mSenseCalibration?.pitch?:0.0f)
 
 //        Log.d("TemplateBinder: ", "onSense: $rollDiff, $pitchDiff")
         val dm = context.resources.displayMetrics

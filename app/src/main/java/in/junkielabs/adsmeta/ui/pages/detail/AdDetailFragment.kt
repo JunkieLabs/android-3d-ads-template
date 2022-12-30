@@ -1,11 +1,10 @@
 package `in`.junkielabs.adsmeta.ui.pages.detail
 
 import `in`.junkielabs.adsmeta.databinding.DetailFragmentBinding
-import `in`.junkielabs.adsmeta.tools.livedata.LiveDataObserver
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
 import `in`.junkielabs.adsmeta.ui.labs.json.Utils
 import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelAdTemplate
-import `in`.junkielabs.adsmeta.ui.labs.three.sense.Labs3dSenseRotation
+import `in`.junkielabs.adsmeta.domain.sense.entity.Entity3dSenseRotation
 import `in`.junkielabs.adsmeta.ui.templates.TemplateBinder
 import android.content.Context
 import android.hardware.Sensor
@@ -20,7 +19,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.GridLayoutManager
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -162,7 +160,7 @@ class AdDetailFragment : FragmentBase(true), SensorEventListener {
             var orientation = FloatArray(3)
             SensorManager.getRotationMatrixFromVector(r, event.values)
             SensorManager.getOrientation(r, orientation)
-            mViewModel.addData(Labs3dSenseRotation(orientation[2], orientation[1]))
+            mViewModel.addData(Entity3dSenseRotation(orientation[2], orientation[1]))
 //            Log.v("LabsFragment3dSense","rotation log:  ${Arrays.toString(orientation)}, ${Arrays.toString(r)}")
 
         }

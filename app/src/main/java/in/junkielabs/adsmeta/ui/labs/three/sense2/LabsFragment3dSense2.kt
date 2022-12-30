@@ -2,7 +2,7 @@ package `in`.junkielabs.adsmeta.ui.labs.three.sense2
 
 import `in`.junkielabs.adsmeta.databinding.Labs3dSense2FragmentBinding
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
-import `in`.junkielabs.adsmeta.ui.labs.three.sense.Labs3dSenseRotation
+import `in`.junkielabs.adsmeta.domain.sense.entity.Entity3dSenseRotation
 import android.content.Context
 import android.hardware.Sensor
 import android.hardware.SensorEvent
@@ -11,12 +11,10 @@ import android.hardware.SensorManager
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-import android.util.TypedValue
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.viewModels
 import com.google.ar.sceneform.Node
 import com.google.ar.sceneform.Scene
@@ -132,7 +130,7 @@ class LabsFragment3dSense2 : FragmentBase(true), SensorEventListener {
         unregisterSensor()
     }
 
-    private fun senseRotate(it: Labs3dSenseRotation?) {
+    private fun senseRotate(it: Entity3dSenseRotation?) {
         // TODO("Not yet implemented")
         var angle = mTransformableNode?.localRotation
         // var sd;
@@ -165,7 +163,7 @@ class LabsFragment3dSense2 : FragmentBase(true), SensorEventListener {
             var orientation = FloatArray(3)
             SensorManager.getRotationMatrixFromVector(r, event.values)
             SensorManager.getOrientation(r, orientation)
-            mViewModel.addData(Labs3dSenseRotation(orientation[2], orientation[1]))
+            mViewModel.addData(Entity3dSenseRotation(orientation[2], orientation[1]))
 //            Log.v("LabsFragment3dSense","rotation log:  ${Arrays.toString(orientation)}, ${Arrays.toString(r)}")
 
         }

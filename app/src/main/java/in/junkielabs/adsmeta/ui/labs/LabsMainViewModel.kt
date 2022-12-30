@@ -16,6 +16,11 @@ class LabsMainViewModel: ViewModelBase() {
     val mEventNavigate: MutableLiveData<LiveDataEvent<Int>> = _mEventNavigate
 
 
+
+    fun navigateToApp(){
+        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.NAV_APP))
+
+    }
     fun navigateToSample1(){
 //        Log.i("LabsMainViewModel", "navigateToSample1")
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.SAMPLE_1))
@@ -56,10 +61,7 @@ class LabsMainViewModel: ViewModelBase() {
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.TEMPLATE_SENSE))
     }
 
-    fun navigateToLauncher(){
-        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.LAUNCHER))
 
-    }
     fun navigateToAdListFragment(){
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.AD_LIST))
 

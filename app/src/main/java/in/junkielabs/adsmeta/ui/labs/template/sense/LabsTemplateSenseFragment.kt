@@ -4,7 +4,7 @@ import `in`.junkielabs.adsmeta.databinding.LabsTemplateFragmentBinding
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
 import `in`.junkielabs.adsmeta.ui.labs.json.Utils
 import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelAdTemplate
-import `in`.junkielabs.adsmeta.ui.labs.three.sense.Labs3dSenseRotation
+import `in`.junkielabs.adsmeta.domain.sense.entity.Entity3dSenseRotation
 import `in`.junkielabs.adsmeta.ui.templates.TemplateBinder
 import android.content.Context
 import android.hardware.Sensor
@@ -151,7 +151,7 @@ class LabsTemplateSenseFragment  : FragmentBase(true), SensorEventListener {
             var orientation = FloatArray(3)
             SensorManager.getRotationMatrixFromVector(r, event.values)
             SensorManager.getOrientation(r, orientation)
-            mViewModel.addData(Labs3dSenseRotation(orientation[2], orientation[1]))
+            mViewModel.addData(Entity3dSenseRotation(orientation[2], orientation[1]))
 //            Log.v("LabsFragment3dSense","rotation log:  ${Arrays.toString(orientation)}, ${Arrays.toString(r)}")
 
         }
