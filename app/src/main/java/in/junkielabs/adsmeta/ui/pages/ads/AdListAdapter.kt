@@ -86,7 +86,6 @@ class AdListAdapter :
     sealed class ItemViewHolder<out T : ViewDataBinding>(val binding: T) :
         RecyclerView.ViewHolder(binding.root) {
 
-        var id = 1
         class Half(binding: AdItemHalfBinding) :
             ItemViewHolder<AdItemHalfBinding>(binding) {
             override fun bind(data: ModelAdItem) {
@@ -120,11 +119,8 @@ class AdListAdapter :
             /*if(chip.tag is String && it.name == chip.tag){
 //                    found
             }*/
-
-
+            chipGroup.removeAllViews()
             tags.forEach {
-
-                id++;
 
                 val chip = AdChipHalfBinding.inflate(
                     LayoutInflater.from(itemView.context),
@@ -132,19 +128,18 @@ class AdListAdapter :
                     false).root
 
                 chip.text = it.name
-                chip.tag = it.name
-
-
                 chipGroup.addView(chip)
-
             }
         }
+
         fun chipFull(chipGroup: ChipGroup, tags: List<Tag>){
+            chipGroup.removeAllViews()
             tags.forEach{
                 val chip = AdChipFullBinding.inflate(
                     LayoutInflater.from(itemView.context),
                     chipGroup,
                     false).root
+
                 chip.text = it.name
                 chip.chipBackgroundColor = ColorStateList.valueOf(it.color.toColorInt())
                 chipGroup.addView(chip)

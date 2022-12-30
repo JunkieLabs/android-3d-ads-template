@@ -12,7 +12,7 @@
             type="in.junkielabs.adsmeta.domain.ads.models.ModelAdItem" />
     </data>
 
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/card_view_half"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,13 +23,18 @@
         app:cardUseCompatPadding="false"
         android:padding="@dimen/dp_0"
         app:cardElevation="@dimen/dp_0"
-
         app:contentPadding="@dimen/dp_0">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/gradient_black_alpha">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/ad_item_title"
@@ -79,5 +84,5 @@
                 app:layout_constraintTop_toBottomOf="@+id/ad_item_chip_group"
                 tools:src="@drawable/pic_book" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </androidx.cardview.widget.CardView>
 </layout>
