@@ -1,0 +1,424 @@
+{
+  "backgrounds": [
+    {
+      "color": "#FFFFFF",
+      "gradient": {
+        "colors": [
+          "#042634",
+          "#031114"
+        ],
+        "orientation": "TOP_BOTTOM"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -1
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        }
+      }
+    }
+  ],
+  "contentObjects": [
+    {
+      "senseLevel": -1,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/ob1.svg",
+        "imageSrc": "file:///android_asset/cns/craft/ob1.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 5
+        },
+        "height": {
+          "type": "percent",
+          "value": 5
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 80
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 25
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "senseLevel": -1,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/ob2.svg",
+        "imageSrc": "file:///android_asset/cns/craft/ob2.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 10
+        },
+        "height": {
+          "type": "percent",
+          "value": 10
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 50
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 25
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "senseLevel": -3,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/ob3.svg",
+        "imageSrc": "file:///android_asset/cns/craft/ob3.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 15
+        },
+        "height": {
+          "type": "percent",
+          "value": 15
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 10
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 28
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "senseLevel": -2,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/ob4.svg",
+        "imageSrc": "file:///android_asset/cns/craft/ob4.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 12
+        },
+        "height": {
+          "type": "percent",
+          "value": 12
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 70
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 35
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "senseLevel": -3,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/ob5.svg",
+        "imageSrc": "file:///android_asset/cns/craft/ob5.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 18
+        },
+        "height": {
+          "type": "percent",
+          "value": 18
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 95
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 50
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "senseLevel": -4,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/ob6.svg",
+        "imageSrc": "file:///android_asset/cns/craft/ob6.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 17
+        },
+        "height": {
+          "type": "percent",
+          "value": 17
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 5
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 78
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "senseLevel": -2,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/ob7.svg",
+        "imageSrc": "file:///android_asset/cns/craft/ob7.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 10
+        },
+        "height": {
+          "type": "percent",
+          "value": 10
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 78
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 40
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "senseLevel": -2,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/craft_quil.svg",
+        "imageSrc": "file:///android_asset/cns/craft/craft_quil.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 40
+        },
+        "height": {
+          "type": "percent",
+          "value": 45
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 60
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 5
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+
+    {
+      "senseLevel": -2,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/craft_ori.svg",
+        "imageSrc": "file:///android_asset/cns/craft/craft_ori.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 45
+        },
+        "height": {
+          "type": "percent",
+          "value": 45
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 80
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 95
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }, {
+      "senseLevel": 1,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/craft_dood.svg",
+        "imageSrc": "file:///android_asset/cns/craft/craft_dood.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 50
+        },
+        "height": {
+          "type": "percent",
+          "value": 35
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 55
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 65
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "senseLevel": 5,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/craft_stick.svg",
+        "imageSrc": "file:///android_asset/cns/craft/craft_stick.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "width": {
+          "type": "percent",
+          "value": 65
+        },
+        "height": {
+          "type": "percent",
+          "value": 35
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 75
+        },
+        "positionX": {
+          "type": "percent",
+          "value": 25
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "senseLevel": 2,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/heading.svg",
+        "imageSrc": "file:///android_asset/cns/craft/heading.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+        },
+        "width": {
+          "type": "percent",
+          "value": 75
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+        "positionX": {
+          "type": "percent",
+          "value": 50
+        },
+        "positionY": {
+          "type": "percent",
+          "value": 10
+        }
+      }
+    }
+  ],
+  "threeDObjects": [
+  ]
+}
