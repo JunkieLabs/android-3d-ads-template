@@ -86,7 +86,7 @@ class TemplateBinder(var adTemplate: ModelAdTemplate) {
 
 //        val set = ConstraintSet()
 //        set.clone(parent)
-        Log.d("TemplateBinder: ", "onSense: $xOffset, $yOffset")
+//        Log.d("TemplateBinder: ", "onSense: $xOffset, $yOffset")
 
         for (bind in objectBindings){
 

@@ -87,7 +87,7 @@ class AdDetailFragment : FragmentBase(true), SensorEventListener {
 
 
     private suspend fun  getJson() = withContext(Dispatchers.IO) {
-        val jsonString = Utils.readJson(requireContext(), "data/ad_trippo.json")
+        val jsonString = Utils.readJson(requireContext(), "data/ad_shoe.json")
 //        binding.textView.text = jsonString
 //        Log.d("LabsFragmentJson", "jsonString: $jsonString")
 
