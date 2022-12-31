@@ -58,6 +58,7 @@
   ],
   "contentObjects": [
     {
+      "senseLevel": 2,
      "cns": {
         "mimeType": "image/svg",
         "source": "assets",
@@ -82,7 +83,7 @@
         ]
       }
     },
-    {
+    {"senseLevel": -2,
       "cns": {
         "mimeType": "image/svg",
         "source": "assets",
@@ -116,7 +117,7 @@
         }
       }
     },
-    {
+    {"senseLevel": 5,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
@@ -142,7 +143,7 @@
       }
     }
   ,
-    {
+    {"senseLevel": 1,
       "cns": {
         "mimeType": "image/svg",
         "source": "assets",

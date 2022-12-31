@@ -40,7 +40,35 @@
   "contentObjects": [
 
     {
-      "senseLevel": 5,
+      "cns": {
+        "mimeType": "image/svg",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/packmann/line.svg",
+        "imageSrc": "file:///android_asset/cns/packmann/line.svg",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -2
+
+        },
+        "width": {
+          "type": "percent",
+          "value": 40
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ],
+        "positionY": {
+          "type": "percent",
+          "value": 20
+        }
+      }
+    },
+    {
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
@@ -64,9 +92,9 @@
           }
         ]
       }
-    },
+    }
+  ,
     {
-      "senseLevel": -2,
       "cns": {
         "mimeType": "image/svg",
         "source": "assets",
@@ -97,7 +125,6 @@
       }
     },
     {
-      "senseLevel": 2,
       "cns": {
         "mimeType": "image/svg",
         "source": "assets",
