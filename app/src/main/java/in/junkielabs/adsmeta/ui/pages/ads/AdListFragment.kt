@@ -6,11 +6,13 @@ import `in`.junkielabs.adsmeta.ui.labs.json.Utils
 import `in`.junkielabs.adsmeta.domain.ads.models.ModelAdList
 import `in`.junkielabs.adsmeta.tools.livedata.LiveDataObserver
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
@@ -44,19 +46,40 @@ class AdListFragment : FragmentBase(true) {
         super.onViewCreated(view, savedInstanceState)
         vBinding.lifecycleOwner = this.viewLifecycleOwner
 
-        mListAdapter = AdListAdapter()
+        mListAdapter = AdListAdapter(){
+            Log.d("AdListFragment", "AdListAdapter: $it")
+            navigateToDetail(it.key)
+        }
+        Log.d("AdListFragment", "onCraeted:")
+
+
         lifecycleScope.launchWhenCreated {
             val layoutManager = GridLayoutManager(requireContext(), 2)
 
             vBinding.recyclerViewAdList.layoutManager = layoutManager
             vBinding.recyclerViewAdList.adapter = mListAdapter
 
+
+
             layoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
                 override fun getSpanSize(position: Int): Int {
                     return mListAdapter.getItemViewType(position)
                 }
             }
+            mViewModel.getList()?.let {
+                mListAdapter.submitList(it)
+            }
+
+            /*mViewModel.mListStateParcel?.let {
+
+                Log.d("AdListAdapter", "listStae: ${it.toString()}")
+//                layoutManager.onRestoreInstanceState(it)
+//                mViewModel.saveListState(null)
+            }*/
+
         }
+
+
 
 
 /*
@@ -71,6 +94,16 @@ class AdListFragment : FragmentBase(true) {
 
     }
 
+    /*override fun onDestroyView() {
+        val listState = vBinding.recyclerViewAdList.layoutManager?.onSaveInstanceState()
+        listState?.let { mViewModel.saveListState(it) }
+        super.onDestroyView()
+    }*/
+
+    private fun navigateToDetail(name: String) {
+        findNavController().navigate(AdListFragmentDirections.navigateToAdDetail(name))
+    }
+
     override fun setupViewModelObservers() {
         super.setupViewModelObservers()
 
@@ -79,6 +112,8 @@ class AdListFragment : FragmentBase(true) {
 
         })
     }
+
+
 
 
     /*private suspend fun  getJson() = withContext(Dispatchers.IO) {

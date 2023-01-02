@@ -5,6 +5,7 @@ import `in`.junkielabs.adsmeta.domain.base.result.DomainResult
 import `in`.junkielabs.adsmeta.tools.livedata.LiveDataEvent
 import `in`.junkielabs.adsmeta.ui.base.ViewModelBase
 import `in`.junkielabs.adsmeta.domain.ads.models.ModelAdItem
+import android.os.Parcelable
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -20,16 +21,25 @@ import javax.inject.Inject
 internal class AdListViewModel @Inject constructor(
     private val getAdsUseCase: GetAdsUseCase
 ): ViewModelBase() {
+    private var mCurrentList: List<ModelAdItem>? = null
+    var mListStateParcel: Parcelable? = null
 
+    fun saveListState(parcel: Parcelable?) {
+        mListStateParcel = parcel
+    }
 
     private val _mEventAds = MutableLiveData<LiveDataEvent<List<ModelAdItem>>>()
     val mEventAds: LiveData<LiveDataEvent<List<ModelAdItem>>> = _mEventAds
     val bIsProgress = MutableLiveData(false)
     init {
-        getList()
+        initList()
     }
 
-    private fun getList() {
+    fun getList(): List<ModelAdItem>? {
+        return mCurrentList
+    }
+
+    private fun initList() {
         viewModelScope.launch {
             bIsProgress.postValue(true)
             getAdsUseCase.invoke().also {
@@ -37,6 +47,7 @@ internal class AdListViewModel @Inject constructor(
                 bIsProgress.postValue(false)
                 when(it) {
                     is DomainResult.Success -> {
+                        mCurrentList = it.value.items
                         _mEventAds.postValue(LiveDataEvent(it.value.items))
                     }
 

@@ -11,20 +11,33 @@
             name="bModel"
             type="in.junkielabs.adsmeta.domain.ads.models.ModelAdItem" />
 
+        <variable
+            name="bOnClick"
+            type="View.OnClickListener" />
+
     </data>
 
-    <androidx.cardview.widget.CardView
+<!--com.google.android.material.card.MaterialCardView
+        app:cardBackgroundColor="#F8F8F8"-->
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        app:strokeWidth="@dimen/dp_0"
+
+        android:onClick="@{bOnClick::onClick}"
+
+        app:cardBackgroundColor="@color/sheet_start"
         android:layout_margin="@dimen/dp_4"
-        app:cardBackgroundColor="#F8F8F8"
         app:cardCornerRadius="@dimen/dp_20">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/card_border">
-
+<!---->
             <TextView
                 android:id="@+id/ad_item_title"
                 android:layout_width="wrap_content"
@@ -33,7 +46,7 @@
                 android:layout_marginTop="@dimen/dp_12"
                 android:text="@{bModel.title}"
                 android:textAppearance="@style/Typo.Jl.cardTitle"
-                android:textColor="@color/black"
+                android:textColor="?colorOnSurface"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.02"
                 app:layout_constraintStart_toStartOf="parent"
@@ -47,29 +60,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ad_item_title">
 
-<!--                <com.google.android.material.chip.Chip-->
-<!--                    style="@style/Widget.Jl.App.Chip.Full"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginHorizontal="4dp"-->
-<!--                    android:text="@string/food" />-->
 
-<!--                <com.google.android.material.chip.Chip-->
-<!--                    style="@style/Widget.Jl.App.Chip.Full"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginHorizontal="4dp"-->
-<!--                    android:text="@string/jelly" />-->
             </com.google.android.material.chip.ChipGroup>
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.card.MaterialCardView
                 android:id="@+id/card_view_full"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp_196"
                 android:layout_marginHorizontal="@dimen/dp_12"
                 android:layout_marginBottom="@dimen/dp_16"
-                app:cardBackgroundColor="#F565E29E"
+                app:bindBackgroundColor="@{bModel.color}"
                 app:cardCornerRadius="@dimen/dp_20"
+                app:strokeWidth="@dimen/dp_0"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -85,9 +87,10 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:src="@drawable/pic_dessert" />
+                        tools:src="@drawable/pic_dessert"
+                        android:contentDescription="image area" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-            </androidx.cardview.widget.CardView>
+            </com.google.android.material.card.MaterialCardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 </layout>

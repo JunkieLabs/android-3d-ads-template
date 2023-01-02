@@ -34,7 +34,10 @@
         tools:layout="@layout/ad_list_fragment">
         <action
             android:id="@+id/navigate_to_ad_detail"
-            app:destination="@id/AdFragment" >
+            app:destination="@id/AdFragment"
+            app:popUpToSaveState="true"
+            app:popUpTo="@id/AdListFragment"
+            app:popUpToInclusive="false">
             <argument android:name="name"
                 app:argType="string"/>
         </action>

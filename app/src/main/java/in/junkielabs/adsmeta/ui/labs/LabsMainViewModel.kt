@@ -62,10 +62,6 @@ class LabsMainViewModel: ViewModelBase() {
     }
 
 
-    fun navigateToAdListFragment(){
-        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.AD_LIST))
-
-    }
     fun navigateToInfoFragment(){
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.INFO))
 

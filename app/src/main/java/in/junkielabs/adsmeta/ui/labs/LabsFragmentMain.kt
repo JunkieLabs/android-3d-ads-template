@@ -87,10 +87,7 @@ class LabsFragmentMain : FragmentBase(true) {
                 val action = LabsFragmentMainDirections.navigateToLabsTemplateSense()
                 findNavController().navigate(action)
             }
-            LabsConstants.Navigation.AD_LIST -> {
-                val action = LabsFragmentMainDirections.navigateToAdListFragment()
-                findNavController().navigate(action)
-            }
+
             LabsConstants.Navigation.INFO -> {
                 val action = LabsFragmentMainDirections.navigateToInfoFragment()
                 findNavController().navigate(action)

@@ -13,7 +13,6 @@ object LabsConstants {
         const val THREE_D_MODEL  = 5
         const val JSON = 20
 //        const val LAUNCHER = 25
-        const val AD_LIST = 26
         const val INFO = 27
         const val AD = 28
         const val TEMPLATE = 32

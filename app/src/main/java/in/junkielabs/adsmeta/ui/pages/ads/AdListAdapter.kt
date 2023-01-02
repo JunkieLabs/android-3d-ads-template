@@ -1,7 +1,6 @@
 package `in`.junkielabs.adsmeta.ui.pages.ads
 
 import `in`.junkielabs.adsmeta.R
-import `in`.junkielabs.adsmeta.data.base.LocalResult
 import `in`.junkielabs.adsmeta.databinding.AdChipFullBinding
 import `in`.junkielabs.adsmeta.databinding.AdChipHalfBinding
 import `in`.junkielabs.adsmeta.databinding.AdItemFullBinding
@@ -29,7 +28,8 @@ import com.google.ar.schemas.lull.Color
 import kotlinx.coroutines.NonDisposableHandle.parent
 import java.io.File
 // https://stackoverflow.com/questions/72717784/using-spansizelookup-in-kotlin-to-set-span-size-based-on-itemviewtype-in-gridlay
-class AdListAdapter :
+class AdListAdapter(
+    val mOnClick: (ModelAdItem) -> Unit) :
     ListAdapter<ModelAdItem, RecyclerView.ViewHolder>(ModelAdItem.diffCallback) {
 
     override fun getItemViewType(position: Int): Int {
@@ -40,17 +40,17 @@ class AdListAdapter :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
 //        return ItemViewHolder.fromHalf(parent)
         return if (viewType == 2) {
-            ItemViewHolder.fromFull(parent)
+            fromFull(parent, this)
         } else {
-            ItemViewHolder.fromHalf(parent)
+            fromHalf(parent, this)
         }
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        if (holder is ItemViewHolder.Half) {
+        if (holder is ItemViewHolderHalf) {
             holder.bind(getItem(position))
         }
-        if (holder is ItemViewHolder.Full) {
+        if (holder is ItemViewHolderFull) {
             holder.bind(getItem(position))
         }
     }
@@ -83,33 +83,16 @@ class AdListAdapter :
 
 
     //    ExploreViewHolder
-    sealed class ItemViewHolder<out T : ViewDataBinding>(val binding: T) :
-        RecyclerView.ViewHolder(binding.root) {
+    abstract inner class ItemViewHolder<out T : ViewDataBinding>(val binding: T) :
+        RecyclerView.ViewHolder(binding.root), View.OnClickListener {
 
-        class Half(binding: AdItemHalfBinding) :
-            ItemViewHolder<AdItemHalfBinding>(binding) {
-            override fun bind(data: ModelAdItem) {
-                binding.bModel = data
-                binding.executePendingBindings()
-                binding.cardViewHalf.setCardBackgroundColor(data.color.toColorInt())
-                adImage(binding.adItemImage, data.cns.imageSrc)
-                chipHalf(binding.adItemChipGroup, data.tags)
 
-            }
-        }
-
-        class Full(binding: AdItemFullBinding) :
-            ItemViewHolder<AdItemFullBinding>(binding) {
-            override fun bind(data: ModelAdItem) {
-                binding.bModel = data
-                binding.executePendingBindings()
-                binding.cardViewFull.setCardBackgroundColor(data.color.toColorInt())
-                adImage(binding.adItemImage, data.cns.imageSrc)
-                chipFull(binding.adItemChipGroup, data.tags)
-            }
-        }
 
         abstract fun bind(data: ModelAdItem)
+        override fun onClick(v: View?) {
+            var posi = absoluteAdapterPosition
+            mOnClick(getItem(posi))
+        }
 
         fun chipHalf(chipGroup: ChipGroup,tags: List<Tag>){
 
@@ -165,20 +148,51 @@ class AdListAdapter :
             }
         }
 
-        companion object {
-            fun fromHalf(parent: ViewGroup): Half {
-                val layoutInflater = LayoutInflater.from(parent.context)
-                val binding = AdItemHalfBinding.inflate(layoutInflater, parent, false)
-                return ItemViewHolder.Half(binding)
-            }
 
-            fun fromFull(parent: ViewGroup): Full {
-                val layoutInflater = LayoutInflater.from(parent.context)
-                val binding = AdItemFullBinding.inflate(layoutInflater, parent, false)
-                return ItemViewHolder.Full(binding)
-            }
+
+    }
+
+    inner class ItemViewHolderHalf(binding: AdItemHalfBinding) :
+        ItemViewHolder<AdItemHalfBinding>(binding) {
+
+
+        override fun bind(data: ModelAdItem) {
+            binding.bModel = data
+            binding.bOnClick =  this
+            binding.executePendingBindings()
+//                binding.cardViewHalf.setCardBackgroundColor(data.color.toColorInt())
+            adImage(binding.adItemImage, data.cns.imageSrc)
+            chipHalf(binding.adItemChipGroup, data.tags)
+
+        }
+    }
+
+    inner class ItemViewHolderFull(binding: AdItemFullBinding) :
+        ItemViewHolder<AdItemFullBinding>(binding) {
+        override fun bind(data: ModelAdItem) {
+            binding.bModel = data
+            binding.bOnClick =  this
+            binding.executePendingBindings()
+
+            adImage(binding.adItemImage, data.cns.imageSrc)
+            chipFull(binding.adItemChipGroup, data.tags)
         }
 
+
+    }
+
+    companion object {
+        fun fromHalf(parent: ViewGroup, adapter: AdListAdapter): ItemViewHolderHalf {
+            val layoutInflater = LayoutInflater.from(parent.context)
+            val binding = AdItemHalfBinding.inflate(layoutInflater, parent, false)
+            return adapter.ItemViewHolderHalf(binding)
+        }
+
+        fun fromFull(parent: ViewGroup,adapter: AdListAdapter): ItemViewHolderFull {
+            val layoutInflater = LayoutInflater.from(parent.context)
+            val binding = AdItemFullBinding.inflate(layoutInflater, parent, false)
+            return adapter.ItemViewHolderFull(binding)
+        }
     }
 
     /*sealed class ItemViewHolder<out T: ViewDataBinding>(val binding: T) : RecyclerView.ViewHolder(binding.root) {

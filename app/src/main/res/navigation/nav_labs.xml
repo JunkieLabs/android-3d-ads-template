@@ -107,11 +107,6 @@
 
 
     </fragment>
-    <fragment
-        android:id="@+id/AdListFragment"
-        android:name="in.junkielabs.adsmeta.ui.pages.ads.AdListFragment"
-        android:label="AdList"
-        tools:layout="@layout/ad_list_fragment"></fragment>
 
     <fragment
         android:id="@+id/InfoFragment"
