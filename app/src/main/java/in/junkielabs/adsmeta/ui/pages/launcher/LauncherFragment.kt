@@ -49,7 +49,7 @@ class LauncherFragment :FragmentBase(true) {
         var navCtrl = findNavController()
 //            navCtrl.popBackStack()
 //        navCtrl.navigate(LauncherFragmentDirections.)
-        navCtrl.navigate(LauncherFragmentDirections.navigateGlobalToList())
+        navCtrl.navigate(LauncherFragmentDirections.navigateToList())
     }
 
 
