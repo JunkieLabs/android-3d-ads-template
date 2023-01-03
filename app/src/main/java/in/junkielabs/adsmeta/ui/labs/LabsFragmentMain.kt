@@ -10,10 +10,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
+import dagger.hilt.android.AndroidEntryPoint
 
 /**
  * Created by Niraj on 20-11-2022.
  */
+@AndroidEntryPoint
 class LabsFragmentMain : FragmentBase(true) {
 
 
@@ -27,7 +29,7 @@ class LabsFragmentMain : FragmentBase(true) {
     ): View {
         vBinding =
             LabsMainFragmentBinding.inflate(inflater, container, false).apply {
-                viewModel = mViewModel
+                bViewModel = mViewModel
                 lifecycleOwner = this@LabsFragmentMain.viewLifecycleOwner
             }
         return vBinding.root

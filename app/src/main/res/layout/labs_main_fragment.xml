@@ -8,7 +8,7 @@
         <import type="android.view.View" />
 
         <variable
-            name="viewModel"
+            name="bViewModel"
             type="in.junkielabs.adsmeta.ui.labs.LabsMainViewModel" />
 
 
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateToApp()}"
+                android:onClick="@{() -> bViewModel.navigateToApp()}"
                 android:text="App" />
 
             <View
@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateTo3d()}"
+                android:onClick="@{() -> bViewModel.navigateTo3d()}"
                 android:text="3d" />
 
 
@@ -84,7 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateTo3dSense2()}"
+                android:onClick="@{() -> bViewModel.navigateTo3dSense2()}"
                 android:text="3d Sense 2" />
 
             <Button
@@ -93,7 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateTo3dModel()}"
+                android:onClick="@{() -> bViewModel.navigateTo3dModel()}"
                 android:text="3d Model" />
 
 

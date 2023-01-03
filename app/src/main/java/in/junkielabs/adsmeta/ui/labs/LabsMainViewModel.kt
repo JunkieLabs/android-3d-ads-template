@@ -5,11 +5,14 @@ import `in`.junkielabs.adsmeta.ui.base.ViewModelBase
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
 /**
  * Created by Niraj on 20-11-2022.
  */
-class LabsMainViewModel: ViewModelBase() {
+@HiltViewModel
+class LabsMainViewModel @Inject constructor(): ViewModelBase() {
 
 
     private val _mEventNavigate = MutableLiveData<LiveDataEvent<Int>>()
