@@ -1,7 +1,7 @@
 package `in`.junkielabs.adsmeta.ui.templates
 
-import `in`.junkielabs.adsmeta.ui.labs.json.model.Model2DNode
-import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelAdTemplate
+import `in`.junkielabs.adsmeta.domain.template.enitity.Model2DNode
+import `in`.junkielabs.adsmeta.domain.template.enitity.ModelAdTemplate
 import `in`.junkielabs.adsmeta.domain.sense.entity.Entity3dSenseRotation
 import `in`.junkielabs.adsmeta.ui.templates.views.TemplateImageViewBind
 import `in`.junkielabs.adsmeta.ui.templates.views.TemplateViewBind

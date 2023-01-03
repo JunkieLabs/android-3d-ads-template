@@ -1,4 +1,4 @@
-package `in`.junkielabs.adsmeta.ui.labs.json.model
+package `in`.junkielabs.adsmeta.domain.template.enitity
 
 data class ModelTag(
     val color: String,

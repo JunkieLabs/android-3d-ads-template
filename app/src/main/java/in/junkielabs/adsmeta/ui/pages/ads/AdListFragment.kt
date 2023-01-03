@@ -2,8 +2,6 @@ package `in`.junkielabs.adsmeta.ui.pages.ads
 
 import `in`.junkielabs.adsmeta.databinding.AdListFragmentBinding
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
-import `in`.junkielabs.adsmeta.ui.labs.json.Utils
-import `in`.junkielabs.adsmeta.domain.ads.models.ModelAdList
 import `in`.junkielabs.adsmeta.tools.livedata.LiveDataObserver
 import android.os.Bundle
 import android.util.Log
@@ -14,12 +12,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import com.squareup.moshi.JsonAdapter
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 @AndroidEntryPoint
 class AdListFragment : FragmentBase(true) {

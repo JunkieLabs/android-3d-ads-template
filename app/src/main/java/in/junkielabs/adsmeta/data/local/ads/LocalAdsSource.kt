@@ -2,9 +2,7 @@ package `in`.junkielabs.adsmeta.data.local.ads
 
 import `in`.junkielabs.adsmeta.data.base.LocalResult
 import `in`.junkielabs.adsmeta.domain.ads.models.ModelAdList
-import `in`.junkielabs.adsmeta.ui.labs.json.Utils
 import android.content.Context
-import android.util.Log
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory

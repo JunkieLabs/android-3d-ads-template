@@ -1,7 +1,7 @@
 package `in`.junkielabs.adsmeta.ui.templates.views.base
 
-import `in`.junkielabs.adsmeta.ui.labs.json.model.Model2DNode
-import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelBoundAlignment
+import `in`.junkielabs.adsmeta.domain.template.enitity.Model2DNode
+import `in`.junkielabs.adsmeta.domain.template.enitity.ModelBoundAlignment
 import `in`.junkielabs.adsmeta.ui.templates.TemplateConstants
 import android.content.Context
 import android.graphics.Color

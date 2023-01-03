@@ -21,19 +21,12 @@ class LabsMainViewModel: ViewModelBase() {
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.NAV_APP))
 
     }
-    fun navigateToSample1(){
-//        Log.i("LabsMainViewModel", "navigateToSample1")
-        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.SAMPLE_1))
-    }
+
 
     fun navigateTo3d(){
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.THREE_D))
     }
 
-    fun navigateTo3dSense(){
-        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.THREE_D_SENSE))
-
-    }
     fun navigateTo3dSense2(){
         _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.THREE_D_SENSE2))
 
@@ -44,32 +37,5 @@ class LabsMainViewModel: ViewModelBase() {
 
     }
 
-    fun navigateToDefault(){
-//        Log.i("LabsMainViewModel", "navigateToDefault")
-        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.DEFAULT))
-    }
-
-    fun navigateToJson(){
-        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.JSON))
-    }
-
-    fun navigateTemplate(){
-        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.TEMPLATE))
-    }
-
-    fun navigateTemplateSense(){
-        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.TEMPLATE_SENSE))
-    }
-
-
-    fun navigateToInfoFragment(){
-        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.INFO))
-
-    }
-
-    fun navigateTemplateAd(){
-        _mEventNavigate.postValue(LiveDataEvent(LabsConstants.Navigation.AD))
-
-    }
 
 }

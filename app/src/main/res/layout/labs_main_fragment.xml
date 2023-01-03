@@ -39,14 +39,7 @@
                 android:layout_height="1dp"
                 android:background="@color/md_grey_600" />
 
-            <Button
-                android:id="@+id/labs_main_fragment_launcher_btn"
-                style="@style/Widget.Jl.App.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateToSample1()}"
-                android:text="Labs Sample 1" />
+
             <Button
                 android:id="@+id/labs_main_fragment_3dsense_btn"
                 style="@style/Widget.Jl.App.Button"
@@ -103,63 +96,9 @@
                 android:onClick="@{() -> viewModel.navigateTo3dModel()}"
                 android:text="3d Model" />
 
-            <Button
-                android:id="@+id/labs_main_fragment_others_btn"
-                style="@style/Widget.Jl.App.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateToDefault()}"
-                android:text="Default" />
-
-
-            <Button
-                android:id="@+id/labs_main_fragment_json_btn"
-                style="@style/Widget.Jl.App.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateToJson()}"
-                android:text="Json" />
-
-            <Button
-                android:id="@+id/labs_main_fragment_template_btn"
-                style="@style/Widget.Jl.App.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateTemplate()}"
-                android:text="Template" />
-
-            <Button
-                android:id="@+id/labs_main_fragment_template_sense_btn"
-                style="@style/Widget.Jl.App.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateTemplateSense()}"
-                android:text="Template Sense"  />
 
 
 
-
-            <Button
-                android:id="@+id/labs_main_fragment_info_btn"
-                style="@style/Widget.Jl.App.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateToInfoFragment()}"
-                android:text="Info" />
-
-            <Button
-                android:id="@+id/labs_main_fragment_ad_detail_btn"
-                style="@style/Widget.Jl.App.Button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_6"
-                android:onClick="@{() -> viewModel.navigateTemplateAd()}"
-                android:text="Ad Detail"  />
 
         </LinearLayout>
 

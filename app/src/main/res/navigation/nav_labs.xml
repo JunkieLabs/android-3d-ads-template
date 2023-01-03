@@ -9,9 +9,7 @@
         android:id="@+id/navigate_global_to_navApp"
         app:destination="@id/nav_app" />
 
-    <action
-        android:id="@+id/navigate_global_to_navDefault"
-        app:destination="@id/nav_default" />
+
 
     <action
         android:id="@+id/navigate_global_to_labsMainFragment"
@@ -23,24 +21,10 @@
         android:label="Main"
         tools:layout="@layout/labs_main_fragment">
 
-        <action
-            android:id="@+id/navigate_to_labsSample1"
-            app:destination="@id/labsSample1Fragment" />
 
         <action
             android:id="@+id/navigate_to_labs3d"
             app:destination="@id/labs3dFragment" />
-
-        <action
-            android:id="@+id/navigate_to_labsJson"
-            app:destination="@id/labsJsonFragment" />
-
-        <action
-            android:id="@+id/navigate_to_labsTemplate"
-            app:destination="@id/labsTemplateFragment" />
-        <action
-            android:id="@+id/navigate_to_labsTemplateSense"
-            app:destination="@id/labsTemplateSenseFragment" />
 
 
         <action
@@ -51,37 +35,8 @@
             android:id="@+id/navigate_to_labs3d_model"
             app:destination="@id/labs3dModelFragment" />
 
-        <action
-            android:id="@+id/navigate_to_ad_list_fragment"
-            app:destination="@id/AdListFragment" />
-        <action
-            android:id="@+id/navigate_to_info_fragment"
-            app:destination="@id/InfoFragment" />
 
-        <action
-            android:id="@+id/navigate_to_ad_detail"
-            app:destination="@id/AdFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/labsSample1Fragment"
-        android:name="in.junkielabs.adsmeta.ui.labs.sample1.LabsFragmentSample1"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/labs_sample1_fragment"></fragment>
-    <fragment
-        android:id="@+id/labsJsonFragment"
-        android:name="in.junkielabs.adsmeta.ui.labs.json.LabsFragmentJson"
-        android:label="Json"
-        tools:layout="@layout/labs_json_fragment"></fragment>
-    <fragment
-        android:id="@+id/labsTemplateFragment"
-        android:name="in.junkielabs.adsmeta.ui.labs.template.LabsTemplateFragment"
-        android:label="Json"
-        tools:layout="@layout/labs_template_fragment"></fragment>
-    <fragment
-        android:id="@+id/labsTemplateSenseFragment"
-        android:name="in.junkielabs.adsmeta.ui.labs.template.sense.LabsTemplateSenseFragment"
-        android:label="Json"
-        tools:layout="@layout/labs_template_fragment"></fragment>
     <fragment
         android:id="@+id/labs3dFragment"
         android:name="in.junkielabs.adsmeta.ui.labs.three.LabsFragment3d"
@@ -108,24 +63,5 @@
 
     </fragment>
 
-    <fragment
-        android:id="@+id/InfoFragment"
-        android:name="in.junkielabs.adsmeta.ui.pages.info.InfoFragment"
-        android:label="Info"
-        tools:layout="@layout/fragment_info"></fragment>
-    <fragment
-        android:id="@+id/AdFragment"
-        android:name="in.junkielabs.adsmeta.ui.pages.detail.AdDetailFragment"
-        android:label="Ad Detail"
-        tools:layout="@layout/detail_fragment">
 
-        <action  android:id="@+id/open_dialog_bottom_sheet"
-            app:destination="@id/detailBottomSheet" />
-
-    </fragment>
-
-    <dialog
-        android:id="@+id/detailBottomSheet"
-        android:name="in.junkielabs.adsmeta.ui.pages.detail.dialog.AdDetailDialog"
-        tools:layout="@layout/detail_bottom_sheet" />
 </navigation>

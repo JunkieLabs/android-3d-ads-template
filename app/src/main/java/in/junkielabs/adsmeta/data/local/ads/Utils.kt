@@ -1,7 +1,6 @@
-package `in`.junkielabs.adsmeta.ui.labs.json
+package `in`.junkielabs.adsmeta.data.local.ads
 
 import android.content.Context
-import android.util.Log
 import java.io.IOException
 import java.io.InputStream
 import kotlin.jvm.Throws

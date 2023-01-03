@@ -1,7 +1,7 @@
 package `in`.junkielabs.adsmeta.domain.ads.models
 
-import `in`.junkielabs.adsmeta.ui.labs.json.model.adModel.Cns
-import `in`.junkielabs.adsmeta.ui.labs.json.model.adModel.Tag
+import `in`.junkielabs.adsmeta.domain.common.Cns
+import `in`.junkielabs.adsmeta.domain.common.Tag
 import androidx.recyclerview.widget.DiffUtil
 
 data class ModelAdItem(

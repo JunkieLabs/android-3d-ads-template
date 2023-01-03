@@ -8,25 +8,17 @@ import `in`.junkielabs.adsmeta.databinding.AdItemHalfBinding
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import `in`.junkielabs.adsmeta.domain.ads.models.ModelAdItem
-import `in`.junkielabs.adsmeta.ui.labs.json.model.adModel.Tag
-import android.annotation.SuppressLint
+import `in`.junkielabs.adsmeta.domain.common.Tag
 import android.content.res.ColorStateList
-import android.graphics.Color.parseColor
 import android.widget.ImageView
-import android.widget.LinearLayout
-import androidx.core.content.ContextCompat
 import androidx.core.graphics.toColorInt
 import androidx.databinding.ViewDataBinding
 import androidx.recyclerview.widget.ListAdapter
 import coil.load
-import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
-import com.google.ar.schemas.lull.Color
-import kotlinx.coroutines.NonDisposableHandle.parent
-import java.io.File
+
 // https://stackoverflow.com/questions/72717784/using-spansizelookup-in-kotlin-to-set-span-size-based-on-itemviewtype-in-gridlay
 class AdListAdapter(
     val mOnClick: (ModelAdItem) -> Unit) :

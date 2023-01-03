@@ -2,8 +2,8 @@ package `in`.junkielabs.adsmeta.ui.pages.detail
 
 import `in`.junkielabs.adsmeta.databinding.DetailFragmentBinding
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
-import `in`.junkielabs.adsmeta.ui.labs.json.Utils
-import `in`.junkielabs.adsmeta.ui.labs.json.model.ModelAdTemplate
+import `in`.junkielabs.adsmeta.data.local.ads.Utils
+import `in`.junkielabs.adsmeta.domain.template.enitity.ModelAdTemplate
 import `in`.junkielabs.adsmeta.domain.sense.entity.Entity3dSenseRotation
 import `in`.junkielabs.adsmeta.ui.templates.TemplateBinder
 import android.content.Context

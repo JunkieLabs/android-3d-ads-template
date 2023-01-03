@@ -1,6 +1,4 @@
-package `in`.junkielabs.adsmeta.ui.labs.json.model
-
-import `in`.junkielabs.adsmeta.domain.template.enitity.ModelGradient
+package `in`.junkielabs.adsmeta.domain.template.enitity
 
 
 data class Model2DNode(

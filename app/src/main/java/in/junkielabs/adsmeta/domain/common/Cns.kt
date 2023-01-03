@@ -1,4 +1,4 @@
-package `in`.junkielabs.adsmeta.ui.labs.json.model.adModel
+package `in`.junkielabs.adsmeta.domain.common
 
 data class Cns(
     val imageSrc: String,
