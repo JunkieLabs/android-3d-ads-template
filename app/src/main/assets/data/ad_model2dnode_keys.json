@@ -1,0 +1,62 @@
+{
+  "color": "?optional",
+  "gradient": {
+    "colors": [
+      "color", "color"
+    ],
+    "orientation": "TOP_BOTTOM|TR_BL|RIGHT_LEFT|BR_TL|BOTTOM_TOP|BL_TR|LEFT_RIGHT|TL_BR"
+
+  },
+  "cns": {
+    "?optional": true,
+    "class-name": "ModelAdCns",
+    "class-definition": {
+      "mimeType": "image/png| svg",
+      "source": "assets|url",
+      "thumbnailSrc": "?optional",
+      "imageSrc": "",
+      "scaleType": "crop|contain"
+    }
+  },
+  "bound": {
+
+    "?optional": true,
+    "class-name": "ModelBound",
+    "class-definition": {
+      "height": "?optional",
+      "width": "?optional",
+      "positionX": "?optional",
+      "positionY": "?optional",
+      "alignSelf": "?optional"
+    },
+    "height:width": {
+      "class-name": "ModelBoundDimension",
+      "class-definition": {
+        "type": "percent|dp",
+        "value": 20
+      },
+      "match": {
+        "type": "dp",
+        "value": -1
+      },
+      "wrap": {
+        "type": "dp",
+        "value": -2
+      }
+    },
+    "positionX:positionY": {
+      "class-name": "ModelBoundDimension",
+      "class-definition": {
+        "type": "percent|dp",
+        "value": 20
+      }
+    },
+    "alignSelf": {
+      "class-name": "ModelBoundAlignment",
+      "prop-definition": [],
+      "class-definition": {
+        "alignment": "top|right|bottom|left|center|centerHorizontal|centerVertical"
+      }
+    }
+  }
+}

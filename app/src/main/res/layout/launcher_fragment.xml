@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dr_launcher_gradient">
+
+    <TextView
+        android:id="@+id/text_view_3d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60"
+        android:textAppearance="@style/Typo.Jl.Digra"
+        android:text="@string/_3d"
+        android:textColor="?colorOnSurface"
+        android:textSize="@dimen/sp_80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_view_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Typo.Jl.Digra"
+        android:text="@string/ad"
+        android:textColor="?colorOnSurface"
+        android:textSize="@dimen/sp_80"
+        app:layout_constraintStart_toStartOf="@+id/text_view_3d"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_3d" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/Typo.Jl.Digra"
+        android:text="@string/templates"
+        android:textColor="?colorOnSurface"
+        android:textSize="@dimen/sp_40"
+        app:layout_constraintStart_toStartOf="@+id/text_view_ad"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_ad" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/launcher_illustration_cl"
+        android:layout_marginTop="@dimen/dp_40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <ImageView
+            android:id="@+id/launcher_illustration_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+<!--            app:layout_constraintWidth_percent="0.4"
+-->
+        <View android:layout_height="0dp"
+            android:layout_width="0dp"
+            app:layout_constraintHeight_max="@dimen/dp_200"
+            app:layout_constraintDimensionRatio="7:10"
+            app:layout_constraintHeight_percent="0.7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/dr_launcher_box_green"
+
+            />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline_h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_marginEnd="-12dp"
+            android:layout_marginBottom="-32dp"
+            app:layout_constraintHeight_max="@dimen/dp_176"
+            app:layout_constraintDimensionRatio="7:10"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintEnd_toStartOf="@id/guideline_v"
+            app:layout_constraintBottom_toTopOf="@id/guideline_h"
+            android:background="@drawable/dr_launcher_box_dark"
+            app:srcCompat="@drawable/ic_launcher_ellipse"
+            android:scaleType="centerInside"
+
+            />
+        <ImageView android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_marginStart="-12dp"
+            android:layout_marginTop="-32dp"
+            app:layout_constraintHeight_max="@dimen/dp_176"
+            app:layout_constraintDimensionRatio="7:10"
+            app:srcCompat="@drawable/ic_launcher_polygon"
+            android:scaleType="centerInside"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toEndOf="@id/guideline_v"
+            app:layout_constraintTop_toBottomOf="@id/guideline_h"
+            android:background="@drawable/dr_launcher_box_light"
+
+            />
+ <!--       <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="@dimen/dp_176"
+            android:layout_height="@dimen/dp_224"
+            android:elevation="@dimen/dp_1"
+            app:cardBackgroundColor="#F79BE4A2"
+            app:cardCornerRadius="@dimen/dp_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_168"
+            app:cardBackgroundColor="#F8F8F8EB"
+            app:cardCornerRadius="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.665"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65">
+
+            <ImageView
+                android:contentDescription="@string/triangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/triangle_22" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/dp_112"
+            android:layout_height="@dimen/dp_168"
+            app:cardBackgroundColor="#99000000"
+            app:cardCornerRadius="@dimen/dp_20"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.36">
+
+            <ImageView
+                android:contentDescription="@string/circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ellipse_22" />
+        </androidx.cardview.widget.CardView>-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:background="#33FFE57F"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_view_3d"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/dp_60"-->
+<!--        android:fontFamily="@font/dirga"-->
+<!--        android:text="3D"-->
+<!--        android:textSize="@dimen/sp_80"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.163"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/text_view_ad"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/dirga"-->
+<!--        android:text="Ad"-->
+<!--        android:textSize="@dimen/sp_80"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/text_view_3d"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/text_view_3d"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/text_view_3d" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/dirga"-->
+<!--        android:text="Templates"-->
+<!--        android:textSize="@dimen/sp_40"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/text_view_ad"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/text_view_ad" />-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginTop="@dimen/dp_40"-->
+<!--        android:background="@drawable/pattern"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView4">-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cardView"-->
+<!--            android:layout_width="@dimen/dp_176"-->
+<!--            android:layout_height="@dimen/dp_224"-->
+<!--            android:elevation="@dimen/dp_1"-->
+<!--            app:cardBackgroundColor="#F79BE4A2"-->
+<!--            app:cardCornerRadius="@dimen/dp_24"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="@dimen/dp_112"-->
+<!--            android:layout_height="@dimen/dp_168"-->
+<!--            app:cardBackgroundColor="#F0DEF4F6"-->
+<!--            app:cardCornerRadius="@dimen/dp_20"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.66"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.65">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/triangle_22" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="@dimen/dp_112"-->
+<!--            android:layout_height="@dimen/dp_168"-->
+<!--            app:cardBackgroundColor="#FF80AB"-->
+<!--            app:cardCornerRadius="@dimen/dp_20"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintHorizontal_bias="0.35"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.36">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:src="@drawable/ellipse_22" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

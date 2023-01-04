@@ -1,0 +1,189 @@
+{
+  "items": [
+    {
+      "key": "ad_noodle",
+      "title": "Noodle",
+      "color": "#F565E29E",
+      "spanCount": 2,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/noodle/thumb.png",
+        "imageSrc": "file:///android_asset/cns/noodle/thumb.png",
+        "scaleType": "contain"
+      },
+      "tags": [
+        {
+          "name":"Food",
+          "color": "#EBF19F"
+        },
+        {
+          "name":"Veg",
+          "color": "#AAFDC6"
+        }
+      ]
+    },
+    {
+      "key": "ad_headphone",
+      "title": "Headphone",
+      "color": "#FF8EB0",
+      "spanCount": 1,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/headphone/thumb.png",
+        "imageSrc": "file:///android_asset/cns/headphone/thumb.png",
+        "scaleType": "contain"
+      },
+      "tags": [
+        {
+          "name":"Music",
+          "color": "#9FF1E7"
+        },
+        {
+          "name":"Fun",
+          "color": "#FFDAA3"
+        }
+      ]
+    },
+    {
+      "key": "ad_shoe",
+      "title": "Shoe",
+      "color": "#F32338",
+      "spanCount": 1,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/shoe/thumb.png",
+        "imageSrc": "file:///android_asset/cns/shoe/thumb.png",
+        "scaleType": "contain"
+      },
+      "tags": [
+        {
+          "name":"Sport",
+          "color": "#9FF1E7"
+        },
+        {
+          "name":"Nike",
+          "color": "#FFDAA3"
+        }
+      ]
+    },
+    {
+      "key": "ad_craft",
+      "title": "Art & Craft",
+      "color": "#2E6450",
+      "spanCount": 2,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/craft/thumb.png",
+        "imageSrc": "file:///android_asset/cns/craft/thumb.png",
+        "scaleType": "contain"
+      },
+      "tags": [
+        {
+          "name":"Sticker",
+          "color": "#F1D59F"
+        },
+        {
+          "name":"Doodle",
+          "color": "#FF9CFB"
+        }
+      ]
+    },
+    {
+      "key": "ad_packmann",
+      "title": "Packmann",
+      "color": "#6C2226",
+      "spanCount": 1,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/packmann/thumb.png",
+        "imageSrc": "file:///android_asset/cns/packmann/thumb.png",
+        "scaleType": "contain"
+      },
+      "tags": [
+        {
+          "name":"Shapes",
+          "color": "#9FF1E7"
+        },
+        {
+          "name":"Abstract",
+          "color": "#FFDAA3"
+        }
+      ]
+    },
+    {
+      "key": "ad_coaching",
+      "title": "Education",
+      "color": "#565656",
+      "spanCount": 1,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/coaching/thumb.png",
+        "imageSrc": "file:///android_asset/cns/coaching/thumb.png",
+        "scaleType": "contain"
+      },
+      "tags": [
+        {
+          "name":"Learn",
+          "color": "#9FF1E7"
+        },
+        {
+          "name":"Coaching",
+          "color": "#FFDAA3"
+        }
+      ]
+    },
+    {
+      "key": "ad_trippo",
+      "title": "Trippo",
+      "color": "#413125",
+      "spanCount": 2,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/trippo/thumb.png",
+        "imageSrc": "file:///android_asset/cns/trippo/thumb.png",
+        "scaleType": "contain"
+      },
+      "tags": [
+        {
+          "name":"Travel",
+          "color": "#AAB8FF"
+        },
+        {
+          "name":"Holiday",
+          "color": "#FFE99C"
+        }
+      ]
+    },
+    {
+      "key": "ad_fest",
+      "title": "Fest",
+      "color": "#49746B",
+      "spanCount": 1,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/fest/thumb.png",
+        "imageSrc": "file:///android_asset/cns/fest/thumb.png",
+        "scaleType": "contain"
+      },
+      "tags": [
+        {
+          "name":"Gift",
+          "color": "#9FF1E7"
+        },
+        {
+          "name":"Tickets",
+          "color": "#FFDAA3"
+        }
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "backgrounds": [
+    {
+      "color": "#f8d576",
+      "bound": {
+        "height": {
+          "type": "dp",
+          "value": -1
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        }
+      }
+    },
+    {
+      "color": "#6fae60",
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 50
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "bottom"
+          }
+        ]
+      }
+    },
+    {
+      "cns": {
+        "mimeType": "image/",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/img/ad_back.png",
+        "imageSrc": "file:///android_asset/img/ad_back.png",
+        "scaleType": "cover"
+      },
+      "bound": {
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    },
+    {
+      "cns": {
+        "mimeType": "image/",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cap.PNG",
+        "imageSrc": "file:///android_asset/cap.PNG",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 50
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "center"
+          }
+        ]
+      }
+    }
+  ],
+  "contentObjects": [
+    {
+      "color": "#235f6ec0",
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "",
+        "imageSrc": "",
+        "scaleType": "crop"
+      },
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 50
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "top"
+          }
+        ]
+      }
+    },
+    {
+      "cns": {
+        "mimeType": "image/",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cap.PNG",
+        "imageSrc": "file:///android_asset/cap.PNG",
+        "scaleType": "contain"
+      },
+      "bound": {
+        "height": {
+          "type": "percent",
+          "value": 50
+        },
+        "width": {
+          "type": "dp",
+          "value": -1
+        },
+        "alignSelf": [
+          {
+            "alignment": "bottom"
+          }
+        ]
+      }
+    }
+  ],
+  "threeDObjects": [
+  ]
+}

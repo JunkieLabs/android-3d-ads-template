@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Jl.App.Button" parent="Widget.Material3.Button">
+        <!--        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>-->
+        <!--        <item name="android:textAppearance">@style/TextAppearance.App.Button</item>-->
+        <!--        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>-->
+        <item name="android:radius">@dimen/dp_14</item>
+    </style>
+    <style name="Widget.Jl.App.Chip" parent="Widget.Material3.Chip.Suggestion">
+        <item name="android:textAppearance">@style/Typo.Jl.chipText</item>
+        <item name="chipCornerRadius">@dimen/dp_16</item>
+    </style>
+    <style name="Widget.Jl.App.Chip.Half" parent="Widget.Jl.App.Chip">
+        <item name="android:textColor">@color/white</item>
+        <item name="chipStrokeColor">@color/md_white_1000_10</item>
+        <item name="chipBackgroundColor">@color/md_white_1000_10</item>
+        <item name="chipSurfaceColor">@android:color/transparent</item>
+    </style>
+    <style name="Widget.Jl.App.Chip.Full" parent="Widget.Jl.App.Chip">
+        <item name="android:textColor">@color/black</item>
+        <item name="chipStrokeColor">@android:color/transparent</item>
+        <item name="chipBackgroundColor">#9FF1E7</item>
+    </style>
+
+    <style name="Widget.Jl.App.Fab" parent="Widget.Material3.ExtendedFloatingActionButton.Primary">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Widget.Jl.App.Card"  parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/Jl.App.ShapeAppearanceOverlay.BottomCorner</item>
+    </style>
+
+    <style name="Jl.App.ShapeAppearanceOverlay.BottomCorner" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/dp_32</item>
+        <item name="cornerSizeTopRight">@dimen/dp_32</item>
+        <item name="cornerSizeBottomLeft">@dimen/dp_0</item>
+        <item name="cornerSizeBottomRight">@dimen/dp_0</item>
+    </style>
+
+    <style name="Widget.Jl.App.FAB" parent="Widget.MaterialComponents.FloatingActionButton">
+
+        <item name="shapeAppearanceOverlay">
+            @style/Jl.App.ShapeAppearanceOverlay.FloatingActionButton
+        </item>
+    </style>
+
+
+    <style name="Jl.App.ShapeAppearanceOverlay.FloatingActionButton" parent="">
+        <item name="cornerSize">100%</item>
+    </style>
+</resources>

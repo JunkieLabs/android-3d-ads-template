@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Typo.Jl.cardTitle" parent="TextAppearance.AppCompat.Medium">
+        <item name="fontFamily">@font/josefin_sans_regular</item>
+        <!--        <item name="android:fontWeight">400</item>-->
+        <!--        <item name="fontStyle">normal</item>-->
+        <item name="android:textSize">@dimen/sp_20</item>
+    </style>
+
+    <style name="Typo.Jl.chipText" parent="TextAppearance.AppCompat.Small">
+        <item name="fontFamily">@font/dm_sans_regular</item>
+        <item name="android:textColor">@color/white</item>
+        <!--        <item name="fontWeight">400</item>-->
+        <!--        <item name="android:textSize">@dimen/sp_14</item>-->
+    </style>
+
+    <style name="Typo.Jl.Button" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/plusjakartasans_regular</item>
+    </style>
+
+    <style name="Typo.Jl.Button.Junkie" parent="Typo.Jl.Button">
+        <item name="fontFamily">@font/raleway_regular</item>
+    </style>
+
+    <style name="Typo.Jl.Digra" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="fontFamily">@font/dirga</item>
+    </style>
+    <style name="Typo.Jl.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/jost_regular</item>
+    </style>
+    <style name="Typo.Jl.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/jost_regular</item>
+    </style>
+    <style name="Typo.Jl.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/jost_regular</item>
+    </style>
+    <style name="Typo.Jl.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/jost_regular</item>
+    </style>
+
+    <style name="Typo.Jl.Body.Jakarta" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/plusjakartasans_regular</item>
+    </style>
+</resources>

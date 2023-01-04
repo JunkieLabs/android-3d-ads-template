@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_labs"
+    app:startDestination="@id/labsMainFragment">
+
+    <action
+        android:id="@+id/navigate_global_to_navApp"
+        app:destination="@id/nav_app" />
+
+
+
+    <action
+        android:id="@+id/navigate_global_to_labsMainFragment"
+        app:destination="@id/labsMainFragment" />
+
+    <fragment
+        android:id="@+id/labsMainFragment"
+        android:name="in.junkielabs.adsmeta.ui.labs.LabsFragmentMain"
+        android:label="Main"
+        tools:layout="@layout/labs_main_fragment">
+
+
+        <action
+            android:id="@+id/navigate_to_labs3d"
+            app:destination="@id/labs3dFragment" />
+
+
+        <action
+            android:id="@+id/navigate_to_labs3d_sense2"
+            app:destination="@id/labs3dSense2Fragment" />
+
+        <action
+            android:id="@+id/navigate_to_labs3d_model"
+            app:destination="@id/labs3dModelFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/labs3dFragment"
+        android:name="in.junkielabs.adsmeta.ui.labs.three.LabsFragment3d"
+        android:label="3d"
+        tools:layout="@layout/labs_3d_fragment">
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/labs3dSense2Fragment"
+        android:name="in.junkielabs.adsmeta.ui.labs.three.sense2.LabsFragment3dSense2"
+        android:label="3d Sense 2"
+        tools:layout="@layout/labs_3d_sense2_fragment">
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/labs3dModelFragment"
+        android:name="in.junkielabs.adsmeta.ui.labs.three.modelview.Labs3dModelFragment"
+        android:label="3d Model"
+        tools:layout="@layout/labs_3d_model_fragment">
+
+
+    </fragment>
+
+
+</navigation>

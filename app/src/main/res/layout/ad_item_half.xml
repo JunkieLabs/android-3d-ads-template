@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="bModel"
+            type="in.junkielabs.adsmeta.domain.ads.models.ModelAdItem" />
+
+        <variable
+            name="bOnClick"
+            type="View.OnClickListener" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view_half"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeWidth="@dimen/dp_0"
+        android:layout_margin="@dimen/dp_4"
+        app:bindBackgroundColor="@{bModel.color}"
+        app:cardCornerRadius="@dimen/dp_20"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"
+
+        android:onClick="@{bOnClick::onClick}"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        android:padding="@dimen/dp_0"
+        app:cardElevation="@dimen/dp_0"
+        app:contentPadding="@dimen/dp_0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_black_alpha">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/ad_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_12"
+                android:text="@{bModel.title}"
+                android:textAppearance="@style/Typo.Jl.cardTitle"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/ad_item_chip_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_item_title">
+
+<!--                <com.google.android.material.chip.Chip-->
+<!--                    style="@style/Widget.Jl.App.Chip.Half"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/food" />-->
+
+<!--                <com.google.android.material.chip.Chip-->
+<!--                    style="@style/Widget.Jl.App.Chip.Half"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/jelly" />-->
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <ImageView
+                android:id="@+id/ad_item_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_168"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ad_item_chip_group"
+                tools:src="@drawable/pic_book" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>
