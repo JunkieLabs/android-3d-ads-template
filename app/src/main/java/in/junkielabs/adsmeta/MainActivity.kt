@@ -1,6 +1,7 @@
 package `in`.junkielabs.adsmeta
 
 import `in`.junkielabs.adsmeta.databinding.ActivityMainBinding
+import `in`.junkielabs.adsmeta.ui.nav.NavManager
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -12,13 +13,18 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.fragment.findNavController
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+
+    @Inject
+    lateinit var navManager: NavManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         WindowCompat.setDecorFitsSystemWindows(window, false)
@@ -27,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        initNavManager()
 //        setSupportActionBar(binding.toolbar)
        /* val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
@@ -64,5 +71,15 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration)
                 || super.onSupportNavigateUp()
+    }
+
+    private fun initNavManager() {
+        navManager.setOnNavEvent {
+            val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment)
+           navHostFragment?.findNavController()?.navigate(it)
+
+           /* val currentFragment = navHostFragment?.childFragmentManager?.fragments?.get(0)
+            currentFragment?.navigateSafe(it)*/
+        }
     }
 }

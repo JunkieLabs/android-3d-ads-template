@@ -123,8 +123,8 @@
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
+        "thumbnailSrc": "file:///android_asset/cns/coaching/thumb.png",
+        "imageSrc": "file:///android_asset/cns/coaching/thumb.png",
         "scaleType": "contain"
       },
       "tags": [

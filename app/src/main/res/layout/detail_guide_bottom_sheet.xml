@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dr_launcher_gradient"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/detail_guide_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_32"
+            android:text="Slightly rotate phone in left or right direction"
+            android:textAlignment="center"
+            android:textAppearance="@style/Typo.Jl.TitleMedium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/detail_guide_title"
+            app:layout_constraintBottom_toTopOf="@id/detail_guide_ok_btn"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/parallax" />
+
+
+
+
+        <Button
+
+            android:id="@+id/detail_guide_ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/dp_32"
+            android:layout_marginBottom="@dimen/dp_44"
+            android:contentDescription="@string/add_button"
+
+           android:text="Ok"
+            android:textColor="@color/white"
+            app:bindBackgroundColor=""
+
+            app:backgroundTint="#25C03E"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

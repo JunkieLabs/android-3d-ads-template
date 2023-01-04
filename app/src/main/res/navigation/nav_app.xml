@@ -49,7 +49,10 @@
         android:name="in.junkielabs.adsmeta.ui.pages.detail.AdDetailFragment"
         android:label="Ad Detail"
         tools:layout="@layout/detail_fragment">
-
+        <action
+            android:id="@+id/navigate_to_list"
+            app:popUpTo="@id/AdFragment"
+            app:popUpToInclusive="true"/>
         <action  android:id="@+id/open_dialog_bottom_sheet"
             app:destination="@id/detailBottomSheet" />
 

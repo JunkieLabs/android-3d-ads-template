@@ -27,4 +27,8 @@
 
 
     <color name="fab_background">#131615</color>
+
+
+    <color name="ad_card_back">#282F2C</color>
+
 </resources>

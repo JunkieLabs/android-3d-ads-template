@@ -76,10 +76,10 @@ class AdDetailFragment : FragmentBase(true), SensorEventListener {
 
         }
         // TODO move in viewmodel
-        vBinding.bottomBar.detailBottomBarFab.setOnClickListener {
+        /*vBinding.bottomBar.detailBottomBarFab.setOnClickListener {
             openDialogBottomSheet()
         }
-
+*/
 
 
     }

@@ -29,7 +29,8 @@
 
     <include
         android:id="@+id/bottom_bar"
-        layout="@layout/details_bottom_bar"/>
+        layout="@layout/details_bottom_bar"
+        app:bViewModel="@{bViewModel}"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

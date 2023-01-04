@@ -20,6 +20,7 @@ import javax.inject.Inject
 @HiltViewModel
 internal class AdListViewModel @Inject constructor(
     private val getAdsUseCase: GetAdsUseCase
+
 ): ViewModelBase() {
     private var mCurrentList: List<ModelAdItem>? = null
     var mListStateParcel: Parcelable? = null
