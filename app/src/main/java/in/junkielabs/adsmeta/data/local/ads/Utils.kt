@@ -6,7 +6,7 @@ import java.io.InputStream
 import kotlin.jvm.Throws
 
 object Utils {
-    fun readJson(context: Context, filePath: String = "data/ad1.json"): String {
+    fun readJson(context: Context, filePath: String = "src/debug/assets/data/ad1.json"): String {
         return getJsonToInputStream(context, filePath).bufferedReader().use { it.readText() }
     }
 

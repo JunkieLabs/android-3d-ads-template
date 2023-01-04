@@ -4,7 +4,6 @@ import `in`.junkielabs.adsmeta.databinding.Labs3dFragmentBinding
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,7 +17,6 @@ import com.google.ar.sceneform.ux.BaseTransformableNode
 import com.google.ar.sceneform.ux.SelectionVisualizer
 import com.google.ar.sceneform.ux.TransformableNode
 import com.google.ar.sceneform.ux.TransformationSystem
-import com.gorisse.thomas.sceneform.environment
 
 
 /*import io.github.sceneview.math.Position
@@ -77,7 +75,7 @@ class LabsFragment3d : FragmentBase(true) {
             select()
         }*/
 //        vBinding.labs3dFragmentScene.environment?.skybox.
-        render(Uri.parse("models/dragon.glb"))
+        render(Uri.parse("src/debug/assets/models/dragon.glb"))
 
         vBinding.labs3dFragmentScene.scene.camera.localPosition = Vector3(0f, 0f, 3f)
         //CameraManipulator

@@ -72,7 +72,7 @@ class AdListFragment : FragmentBase(true) {
             mViewModel.getList()?.let {
                 mListAdapter.submitList(it)
             }
-
+//            throw RuntimeException("Test Crash")
 
             /*mViewModel.mListStateParcel?.let {
 
