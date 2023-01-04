@@ -1,123 +1,123 @@
 {
   "items": [
     {
-      "key": "noodle",
+      "key": "ad_noodle",
       "title": "Noodle",
       "color": "#F565E29E",
       "spanCount": 2,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
-        "scaleType": "cover"
+        "thumbnailSrc": "file:///android_asset/cns/noodle/thumb.png",
+        "imageSrc": "file:///android_asset/cns/noodle/thumb.png",
+        "scaleType": "contain"
       },
       "tags": [
         {
           "name":"Food",
-          "color": "#9FF1E7"
+          "color": "#EBF19F"
         },
         {
-          "name":"Jelly",
-          "color": "#FFDAA3"
+          "name":"Veg",
+          "color": "#AAFDC6"
         }
       ]
     },
     {
-      "key": "trippy",
-      "title": "Trippy",
-      "color": "#9FF1E7",
+      "key": "ad_headphone",
+      "title": "Headphone",
+      "color": "#FF8EB0",
       "spanCount": 1,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/headphone/product.png",
-        "imageSrc": "file:///android_asset/cns/headphone/product.png",
-        "scaleType": "cover"
+        "thumbnailSrc": "file:///android_asset/cns/headphone/thumb.png",
+        "imageSrc": "file:///android_asset/cns/headphone/thumb.png",
+        "scaleType": "contain"
       },
       "tags": [
         {
-          "name":"Food",
+          "name":"Music",
           "color": "#9FF1E7"
         },
         {
-          "name":"Jelly",
+          "name":"Fun",
           "color": "#FFDAA3"
         }
       ]
     },
     {
-      "key": "wait",
-      "title": "Wait",
-      "color": "#FFDAA3",
+      "key": "ad_shoe",
+      "title": "Shoe",
+      "color": "#F32338",
       "spanCount": 1,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/packmann/3d.png",
-        "imageSrc": "file:///android_asset/cns/packmann/3d.png",
-        "scaleType": "cover"
+        "thumbnailSrc": "file:///android_asset/cns/shoe/thumb.png",
+        "imageSrc": "file:///android_asset/cns/shoe/thumb.png",
+        "scaleType": "contain"
       },
       "tags": [
         {
-          "name":"Food",
+          "name":"Sport",
           "color": "#9FF1E7"
         },
         {
-          "name":"Jelly",
+          "name":"Nike",
           "color": "#FFDAA3"
         }
       ]
     },
     {
-      "key": "3d",
-      "title": "3d",
-      "color": "#161616",
-      "spanCount": 1,
-      "cns": {
-        "mimeType": "image/png",
-        "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
-        "scaleType": "cover"
-      },
-      "tags": [
-        {
-          "name":"Food",
-          "color": "#9FF1E7"
-        },
-        {
-          "name":"Jelly",
-          "color": "#FFDAA3"
-        }
-      ]
-    },
-    {
-      "key": "nd",
-      "title": "Noodle",
-      "color": "#161616",
+      "key": "ad_craft",
+      "title": "Art & Craft",
+      "color": "#2E6450",
       "spanCount": 2,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
-        "scaleType": "cover"
+        "thumbnailSrc": "file:///android_asset/cns/craft/thumb.png",
+        "imageSrc": "file:///android_asset/cns/craft/thumb.png",
+        "scaleType": "contain"
       },
       "tags": [
         {
-          "name":"Food",
+          "name":"Sticker",
+          "color": "#F1D59F"
+        },
+        {
+          "name":"Doodle",
+          "color": "#FF9CFB"
+        }
+      ]
+    },
+    {
+      "key": "ad_packmann",
+      "title": "Packmann",
+      "color": "#6C2226",
+      "spanCount": 1,
+      "cns": {
+        "mimeType": "image/png",
+        "source": "assets",
+        "thumbnailSrc": "file:///android_asset/cns/packmann/thumb.png",
+        "imageSrc": "file:///android_asset/cns/packmann/thumb.png",
+        "scaleType": "contain"
+      },
+      "tags": [
+        {
+          "name":"Shapes",
           "color": "#9FF1E7"
         },
         {
-          "name":"Jelly",
+          "name":"Abstract",
           "color": "#FFDAA3"
         }
       ]
     },
     {
-      "key": "tp",
-      "title": "Trippy",
+      "key": "ad_coaching",
+      "title": "Education",
       "color": "#161616",
       "spanCount": 1,
       "cns": {
@@ -125,156 +125,65 @@
         "source": "assets",
         "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
         "imageSrc": "file:///android_asset/cns/noodle/3d.png",
-        "scaleType": "cover"
+        "scaleType": "contain"
       },
       "tags": [
         {
-          "name":"Food",
+          "name":"Learn",
           "color": "#9FF1E7"
         },
         {
-          "name":"Jelly",
+          "name":"Coaching",
           "color": "#FFDAA3"
         }
       ]
     },
     {
-      "key": "wt",
-      "title": "Wait",
-      "color": "#161616",
-      "spanCount": 1,
-      "cns": {
-        "mimeType": "image/png",
-        "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
-        "scaleType": "cover"
-      },
-      "tags": [
-        {
-          "name":"Food",
-          "color": "#9FF1E7"
-        },
-        {
-          "name":"Jelly",
-          "color": "#FFDAA3"
-        }
-      ]
-    },
-    {
-      "key": "thd",
-      "title": "3d",
-      "color": "#161616",
-      "spanCount": 1,
-      "cns": {
-        "mimeType": "image/png",
-        "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
-        "scaleType": "cover"
-      },
-      "tags": [
-        {
-          "name":"Food",
-          "color": "#9FF1E7"
-        },
-        {
-          "name":"Jelly",
-          "color": "#FFDAA3"
-        }
-      ]
-    },
-    {
-      "key": "nnt",
-      "title": "Noodle",
-      "color": "#161616",
+      "key": "ad_trippo",
+      "title": "Trippo",
+      "color": "#413125",
       "spanCount": 2,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
-        "scaleType": "cover"
+        "thumbnailSrc": "file:///android_asset/cns/trippo/thumb.png",
+        "imageSrc": "file:///android_asset/cns/trippo/thumb.png",
+        "scaleType": "contain"
       },
       "tags": [
         {
-          "name":"Food",
-          "color": "#9FF1E7"
+          "name":"Travel",
+          "color": "#AAB8FF"
         },
         {
-          "name":"Jelly",
-          "color": "#FFDAA3"
+          "name":"Holiday",
+          "color": "#FFE99C"
         }
       ]
     },
     {
-      "key": "tpt",
-      "title": "Trippy",
-      "color": "#161616",
+      "key": "ad_fest",
+      "title": "Fest",
+      "color": "#49746B",
       "spanCount": 1,
       "cns": {
         "mimeType": "image/png",
         "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
-        "scaleType": "cover"
+        "thumbnailSrc": "file:///android_asset/cns/fest/thumb.png",
+        "imageSrc": "file:///android_asset/cns/fest/thumb.png",
+        "scaleType": "contain"
       },
       "tags": [
         {
-          "name":"Food",
+          "name":"Gift",
           "color": "#9FF1E7"
         },
         {
-          "name":"Jelly",
-          "color": "#FFDAA3"
-        }
-      ]
-    },
-    {
-      "key": "wai",
-      "title": "Wait",
-      "color": "#161616",
-      "spanCount": 1,
-      "cns": {
-        "mimeType": "image/png",
-        "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
-        "scaleType": "cover"
-      },
-      "tags": [
-        {
-          "name":"Food",
-          "color": "#9FF1E7"
-        },
-        {
-          "name":"Jelly",
-          "color": "#FFDAA3"
-        }
-      ]
-    },
-    {
-      "key": "thrd",
-      "title": "3d",
-      "color": "#161616",
-      "spanCount": 1,
-      "cns": {
-        "mimeType": "image/png",
-        "source": "assets",
-        "thumbnailSrc": "file:///android_asset/cns/noodle/3d.png",
-        "imageSrc": "file:///android_asset/cns/noodle/3d.png",
-        "scaleType": "cover"
-      },
-      "tags": [
-        {
-          "name":"Food",
-          "color": "#9FF1E7"
-        },
-        {
-          "name":"Jelly",
+          "name":"Tickets",
           "color": "#FFDAA3"
         }
       ]
     }
+
   ]
 }
