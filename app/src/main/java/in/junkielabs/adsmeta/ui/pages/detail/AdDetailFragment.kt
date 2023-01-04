@@ -5,6 +5,7 @@ import `in`.junkielabs.adsmeta.ui.base.FragmentBase
 import `in`.junkielabs.adsmeta.data.local.ads.Utils
 import `in`.junkielabs.adsmeta.domain.template.enitity.ModelAdTemplate
 import `in`.junkielabs.adsmeta.domain.sense.entity.Entity3dSenseRotation
+import `in`.junkielabs.adsmeta.tools.livedata.LiveDataObserver
 import `in`.junkielabs.adsmeta.ui.templates.TemplateBinder
 import android.content.Context
 import android.hardware.Sensor
@@ -19,11 +20,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 /**
@@ -31,6 +34,9 @@ import kotlinx.coroutines.withContext
  */
 @AndroidEntryPoint
 class AdDetailFragment : FragmentBase(true), SensorEventListener {
+
+
+    private val args: AdDetailFragmentArgs by navArgs()
     private var mSensorManager: SensorManager? = null
     private var mTemplateBinder: TemplateBinder? =null
 
@@ -56,12 +62,13 @@ class AdDetailFragment : FragmentBase(true), SensorEventListener {
         super.onViewCreated(view, savedInstanceState)
         vBinding.lifecycleOwner = this.viewLifecycleOwner
         lifecycleScope.launchWhenCreated {
-            var template = getJson()
+            // TODO var template = getJson()
+            mViewModel.initArgs(args)
 
-            mTemplateBinder = template?.let { TemplateBinder(it) }
+//            mTemplateBinder = template?.let { TemplateBinder(it) }
 
 
-            bindData()
+//            bindData()
 
 //            Log.i("LabsTemplateFragment", "onViewCreated: $template")
         }
@@ -127,6 +134,17 @@ class AdDetailFragment : FragmentBase(true), SensorEventListener {
 
 
         }
+
+        mViewModel.mEventTemplate.observe(viewLifecycleOwner, LiveDataObserver{
+            mTemplateBinder = TemplateBinder(it)
+
+            lifecycleScope.launch {
+                bindData()
+
+            }
+
+
+        })
     }
 
 

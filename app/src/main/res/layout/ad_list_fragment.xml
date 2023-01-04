@@ -26,7 +26,11 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:title="Explore Ads" />
+            app:title="Explore Ads"
+            android:id="@+id/topAppBar"
+            app:titleCentered="true"
+            app:logo="@drawable/ic_logo_plain"
+            app:menu="@menu/menu_ad_list"/>
     </com.google.android.material.appbar.AppBarLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

@@ -34,7 +34,7 @@ class LauncherFragment :FragmentBase(true) {
         vBinding.launcherIllustrationBack.setImageDrawable( d?.let { TileDrawable(it, Shader.TileMode.REPEAT) })
 
         lifecycleScope.launchWhenCreated {
-            delay(timeMillis = 2000)
+            delay(timeMillis = 500)
             navigateToList()
 
         }

@@ -1,5 +1,6 @@
 package `in`.junkielabs.adsmeta.ui.pages.ads
 
+import `in`.junkielabs.adsmeta.R
 import `in`.junkielabs.adsmeta.databinding.AdListFragmentBinding
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
 import `in`.junkielabs.adsmeta.tools.livedata.LiveDataObserver
@@ -39,6 +40,15 @@ class AdListFragment : FragmentBase(true) {
         super.onViewCreated(view, savedInstanceState)
         vBinding.lifecycleOwner = this.viewLifecycleOwner
 
+
+        vBinding.topAppBar.setOnMenuItemClickListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.menu_ad_list_action_about -> navigateToAbout()
+
+                else -> false
+            }
+        }
+
         mListAdapter = AdListAdapter(){
             Log.d("AdListFragment", "AdListAdapter: $it")
             navigateToDetail(it.key)
@@ -63,6 +73,7 @@ class AdListFragment : FragmentBase(true) {
                 mListAdapter.submitList(it)
             }
 
+
             /*mViewModel.mListStateParcel?.let {
 
                 Log.d("AdListAdapter", "listStae: ${it.toString()}")
@@ -84,6 +95,12 @@ class AdListFragment : FragmentBase(true) {
         }
 */
 
+
+    }
+
+    private fun navigateToAbout(): Boolean {
+        findNavController().navigate(AdListFragmentDirections.navigateToAbout())
+        return true
 
     }
 

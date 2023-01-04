@@ -73,7 +73,7 @@
         "source": "assets",
         "thumbnailSrc": "file:///android_asset/cns/coaching/student.png",
         "imageSrc": "file:///android_asset/cns/coaching/student.png",
-        "scaleType": "cover"
+        "scaleType": "contain"
       },
       "bound": {
         "height": {
@@ -81,12 +81,12 @@
           "value": 80
         },
         "width": {
-          "type": "percent",
-          "value": 80
+          "type": "dp",
+          "value": 0
         },
         "positionY": {
           "type": "percent",
-          "value": 100
+          "value": 150
         },
         "alignSelf": [
           {

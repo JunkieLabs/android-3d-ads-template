@@ -28,6 +28,7 @@
             android:id="@+id/animation_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintHeight_max="@dimen/dp_200"
 
             app:layout_constraintLeft_toLeftOf="parent"
 
@@ -54,7 +55,6 @@
 
            android:text="Ok"
             android:textColor="@color/white"
-            app:bindBackgroundColor=""
 
             app:backgroundTint="#25C03E"
             app:layout_constraintBottom_toBottomOf="parent"

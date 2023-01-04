@@ -2,6 +2,7 @@ package `in`.junkielabs.adsmeta.data.local.ads
 
 import `in`.junkielabs.adsmeta.data.base.LocalResult
 import `in`.junkielabs.adsmeta.domain.ads.models.ModelAdList
+import `in`.junkielabs.adsmeta.domain.template.enitity.ModelAdTemplate
 import android.content.Context
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
@@ -45,6 +46,32 @@ class LocalAdsSource @Inject constructor(@ApplicationContext var context: Contex
 
         }
 
+    }
+
+    suspend fun getAdByName(path: String)= withContext(Dispatchers.IO) {
+        var data: ModelAdTemplate? = null
+        try {
+            val jsonString = Utils.readJson(context, path)
+
+            val moshi: Moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
+            val jsonAdapter: JsonAdapter<ModelAdTemplate> = moshi.adapter(ModelAdTemplate::class.java)
+            data = jsonAdapter.fromJson(jsonString)
+
+        }catch (
+            e: Throwable
+        ){
+            e.printStackTrace()
+            return@withContext LocalResult.Exception(e)
+
+        }
+
+//        Log.d("LocalAdsSource", "getAds: ${data}")
+        if(data!=null){
+            return@withContext LocalResult.Success(data)
+        }else {
+            return@withContext LocalResult.Message(12, "Data Empty")
+
+        }
     }
 
 

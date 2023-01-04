@@ -43,7 +43,7 @@ internal class AdListViewModel @Inject constructor(
     private fun initList() {
         viewModelScope.launch {
             bIsProgress.postValue(true)
-            getAdsUseCase.invoke().also {
+            getAdsUseCase().also {
 
                 bIsProgress.postValue(false)
                 when(it) {

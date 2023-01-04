@@ -5,6 +5,7 @@ import `in`.junkielabs.adsmeta.data.local.ads.LocalAdsSource
 import `in`.junkielabs.adsmeta.domain.ads.repository.AdsRepository
 import `in`.junkielabs.adsmeta.domain.ads.models.ModelAdList
 import `in`.junkielabs.adsmeta.domain.base.result.DomainResult
+import `in`.junkielabs.adsmeta.domain.template.enitity.ModelAdTemplate
 import javax.inject.Inject
 
 /**
@@ -29,6 +30,23 @@ class AdsRepositoryImpl @Inject constructor(val source : LocalAdsSource) : AdsRe
         }
 
 
+    }
+
+    override suspend fun getDetail(name: String): DomainResult<ModelAdTemplate> {
+        return when(val result = source.getAdByName("data/${name}.json")){
+            is LocalResult.Success ->{
+                DomainResult.Success(result.data)
+
+            }
+            is LocalResult.Exception ->{
+                DomainResult.Failure(result.throwable)
+
+            }
+            is LocalResult.Message ->{
+                DomainResult.Failure(Throwable("Not item found"))
+
+            }
+        }
     }
 
 

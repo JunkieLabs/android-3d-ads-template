@@ -1,4 +1,4 @@
-package `in`.junkielabs.adsmeta.ui.pages.info
+package `in`.junkielabs.adsmeta.ui.pages.about
 
 import `in`.junkielabs.adsmeta.databinding.AboutFragmentBinding
 import `in`.junkielabs.adsmeta.ui.base.FragmentBase
@@ -9,13 +9,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class InfoFragment : FragmentBase(true) {
+class AboutFragment : FragmentBase(true) {
     private lateinit var vBinding: AboutFragmentBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?,
-    ): View? {
+    ): View {
         vBinding = AboutFragmentBinding.inflate(layoutInflater, container, false)
         return vBinding.root
     }
